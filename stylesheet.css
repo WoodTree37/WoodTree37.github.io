@@ -36,7 +36,10 @@ body {
       }   
       a:hover, a:active {
         text-decoration: none;
-        color: lightgreen;
-        background-color: lightgreen;
+        color: black;
+        background-color: rgba(0, 255, 0, 0.3);
+        border-color: green;
+        border-radius: 5px;
+        border-width: 1px;
       }
  
