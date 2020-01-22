@@ -2,7 +2,14 @@ body {
     background-color: lightblue;
   }
   
-  h3 {
+  h1 {
     color: navy;
     margin-left: 20px;
+    background-color: lightgreen;
   }
+
+    h3 {
+    border-bottom: 6px groove red; /*Hier könnte jedweils die Hintergrundfareb, aber dünkler sein */
+    background-color: lightgrey;
+
+    }
