@@ -1,13 +1,16 @@
 body.Home {
     background-color: lightblue;
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 1.1em;
-    color: black;
-}
+    }
+body {
+  font-family: Verdana, Arial, sans-serif;
+  color: black;
+  font-size: 1.1em;
+  }
   
 * {
   box-sizing: border-box;
-  font-family: Verdana, Arial, sans-serif;   
+  font-family: Verdana, Arial, sans-serif;  
+   
     color: black;
 } 
 .imgs{
