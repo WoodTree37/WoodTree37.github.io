@@ -9,6 +9,11 @@ body {
     background-color: lightgreen;
     }
 
+    h2 {
+        text-align: center;
+        color: black;
+    }
+
     h3 {
     border-bottom: 6px groove red; /*Hier könnte jedweils die Hintergrundfareb, aber dünkler sein */
     background-color: lightgrey;
@@ -21,7 +26,7 @@ body {
         border-width: 2px;
         background-color: rgba(0, 255, 0, 0.3);
     }
-    
+
     a {
         text-decoration: none;
       }
