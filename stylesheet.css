@@ -13,3 +13,11 @@ body {
     border-bottom: 6px groove red; /*Hier könnte jedweils die Hintergrundfareb, aber dünkler sein */
     background-color: lightgrey;
     }
+ 
+    button {
+        padding: 40px 50px 40px 50px;
+        border-color: green;
+        border-radius: 5px;
+        border-width: 2px;
+        background-color: rgba(0, 255, 0, 0.3);
+    }
