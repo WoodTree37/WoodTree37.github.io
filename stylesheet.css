@@ -60,13 +60,14 @@ body.Home {
     a:link, a:visited {
         text-decoration: none;
         color: black;
+        
+        border-color: green;
+        border-radius: 5px;
+        border-width: 1px;
       }   
       a:hover, a:active {
         text-decoration: none;
         color: black;
-        background-color: rgba(0, 255, 0, 0.3);
-        border-color: green;
-        border-radius: 5px;
-        border-width: 1px;
+        background-color: green; 
       }
  
