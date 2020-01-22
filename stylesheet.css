@@ -1,6 +1,8 @@
 body {
     background-color: lightblue;
-  }
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.1em;
+}
   
   h1 {
     text-align: center;
@@ -15,9 +17,9 @@ body {
     }
 
     h3 {
-    border-bottom: 6px groove red; /*Hier könnte jedweils die Hintergrundfareb, aber dünkler sein */
-    background-color: lightgrey;
-    text-shadow: 3px 2px red; /* Nur Testweise */
+    border-bottom: 2px groove black; /*Hier könnte jedweils die Hintergrundfareb, aber dünkler sein */
+    background-color: greenyellow;
+    
     }
  
     button {
@@ -28,7 +30,12 @@ body {
         background-color: rgba(0, 255, 0, 0.3);
     }
 
-    a {
+    a:link {
         text-decoration: none;
         color: black;
+      }
+      a:hover {
+        text-decoration: none;
+        color: black;
+        background-color: lightgreen;
       }
