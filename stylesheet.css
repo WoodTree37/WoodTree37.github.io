@@ -30,12 +30,13 @@ body {
         background-color: rgba(0, 255, 0, 0.3);
     }
 
-    a:link {
+    a:link, a:visited {
         text-decoration: none;
         color: black;
-      }
-      a:hover {
+      }   
+      a:hover, a:active {
         text-decoration: none;
-        color: black;
+        color: lightgreen;
         background-color: lightgreen;
       }
+ 
