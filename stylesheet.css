@@ -1,18 +1,40 @@
-body {
+body.Home {
     background-color: lightblue;
     font-family: Verdana, Arial, sans-serif;
     font-size: 1.1em;
     color: black;
 }
   
-  h1 {
-    max-width: 1500px; 
-    margin: auto;
-    text-align: center; 
-    color: darkblue;
     
-    background-color: lightgreen;
-    }
+    div.Titel {
+      max-width: 70%; 
+      margin: auto;
+      text-align: center; 
+      color: darkblue;  
+      background-color: lightgreen;
+      position: sticky;
+      top: 2px;  
+      }
+      div.nav_l {
+        text-align: center;
+        color: darkblue;
+        background-color: lightgreen;
+        position: fixed;
+        top: 20px;
+        left: 15px;
+        width: 85px;
+        border: 3px solid green;
+      }
+      div.nav_r {
+        text-align: center;
+        color: darkblue;
+        background-color: lightgreen;
+        position: fixed;
+        top: 20px;
+        right: 15px;
+        width: 85px;
+        border: 3px solid green;
+      }
 
     h2 {
         text-align: center;
@@ -26,8 +48,9 @@ body {
     }
  
     button {
-        min-width: 150px;
-        padding: 50px 5%;                          /*padding: 50px 60px 50px 60px; */
+        text-align: center;
+        width: 150px;
+        padding: 50px 11%;                         /*padding: 50px 60px 50px 60px; */
         border-color: green;
         border-radius: 5px;
         border-width: 3px;
@@ -45,13 +68,5 @@ body {
         border-color: green;
         border-radius: 5px;
         border-width: 1px;
-      }
-
-      div.fixed {
-        position: fixed;
-        top: 20px;
-        left: 20px;
-        width: 80px;
-        border: 3px solid #73AD21;
       }
  
