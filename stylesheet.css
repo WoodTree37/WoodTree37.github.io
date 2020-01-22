@@ -59,7 +59,7 @@ body.Home {
         color: black;
     }
 
-    h3 {
+    h3/* Übertitel der Prüfungen*/ {
     border-bottom: 2px groove black; /*Hier könnte jedweils die Hintergrundfareb, aber dünkler sein */
     background-color: greenyellow;
     
@@ -75,6 +75,7 @@ body.Home {
         background-color: rgba(0, 255, 0, 0.3);
     }
 
+            /*Links*/
     a:link, a:visited {
         text-decoration: none;
         color: black;
