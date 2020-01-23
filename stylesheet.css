@@ -26,6 +26,9 @@ body {
   clear: both;
   display: table;
 }
+.download:hover, .download:active {
+  background-color: red;
+}
 
     div.Titel {
       max-width: 70%; 
@@ -137,4 +140,5 @@ body {
           width: 100%;
         }
       }
+
       
