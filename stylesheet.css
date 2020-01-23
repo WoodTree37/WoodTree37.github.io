@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Arial, sans-serif;  
+   
+    color: black;
+}
 body.Home {
     background-color: lightblue;
     }
@@ -7,12 +13,9 @@ body {
   font-size: 1.1em;
   }
   
-* {
-  box-sizing: border-box;
-  font-family: Verdana, Arial, sans-serif;  
-   
-    color: black;
-} 
+
+
+/* 
 .imgs{
   float: left;
   width: 25%;
@@ -21,6 +24,7 @@ body {
 .imgs:hover {
   opacity: 0.5;
 }
+*/
 .clearfix::after {
   content: "";
   clear: both;
