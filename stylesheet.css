@@ -54,7 +54,11 @@ body {
         left: 15px;
         width: 90px;
         border: 3px solid green;
-        border-bottom: 3px solid green;
+        border-bottom: 3px solid green;       
+      }
+      .Rollstuhl {
+        position: fixed;
+        bottom: 0;
         
       }
     
