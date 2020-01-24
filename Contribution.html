@@ -1,17 +1,65 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Website of N.T. - Contribution</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <script src="https://kit.fontawesome.com/047f4e48cc.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="Home">  
-    <div class="Titel"><h1>List of ...</h1> </div>   
-    <div class="nav_r"> <a class="link" href="Contribution.html">Help</a> </div>
-    <div class="nav_l"><a class="link" href="index.html">Home</a> <a class="link" href="Testseite.html"> Testseite</a> </div>        
 
+
+<body class="Home">  
+    <div class="Titel"><h1>Welcome to the Website of N.T.</h1> </div>
+
+        <div class="nav_r"> <a class="link" href="Contribution.html">Help</a> </div>
+        <div class="nav_l"><a class="link" href="index.html">Home</a> <a class="link" href="Testseite.html"> Testseite</a> </div>        
+   
+
+
+<!-- Button to open the modal login form -->
+<button class="login" onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+    
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button  type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      
+    </div>
+  </form>
+</div>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+
+<!------------------------------------------------------------->
 
     <p>Things to be added:</p>
     <ul>

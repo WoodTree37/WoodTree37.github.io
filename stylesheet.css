@@ -47,7 +47,7 @@ body {
       div.nav_l {
         font-family: Verdana, Arial, sans-serif; 
         text-align: center;
-        color: darkblue;
+        color: black;
         background-color: lightgreen;
         position: fixed;
         top: 20px;
@@ -65,7 +65,7 @@ body {
       div.nav_r {
         font-family: Verdana, Arial, sans-serif; 
         text-align: center;
-        color: darkblue;
+        color: black;
         background-color: lightgreen;
         position: fixed;
         top: 20px;
@@ -87,7 +87,7 @@ body {
     
     }
  
-    button {
+    button.Home {
         text-align: center;
         width: 100%;
         height: auto;
@@ -148,5 +148,72 @@ body {
           width: 100%;
         }
       }
+
+      /*-----------------------------------Section for Login--------------------------*/
+
+      button.login {
+        color: black;  
+        font-size: 1em;      
+        margin: 8px 0;
+        font-family: Verdana, Arial, sans-serif; 
+        text-align: center;       
+        background-color: lightgreen;
+        position: fixed;
+        top: 45px;
+        right: 15px;
+        width: 90px;
+        border: 3px solid green;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto; /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+
+
+
 
       
