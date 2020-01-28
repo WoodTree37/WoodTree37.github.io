@@ -75,12 +75,13 @@ body {
     background-color: greenyellow;
     
     }
+    
  
     button.Home {
         text-align: center;
         width: 100%;
         height: auto;
-        padding: 50px 0;                         /*padding: 50px 60px 50px 60px; */
+        padding: 50px 0;                        
         border-color: green;
         border-radius: 5px;
         border-width: 3px;
@@ -88,6 +89,7 @@ body {
     }
     button:hover {
       background-color: rgba(0, 255, 0, 0.7);
+      
     }
 
             /*Links*/
