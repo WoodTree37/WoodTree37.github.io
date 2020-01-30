@@ -120,6 +120,7 @@ body {
       div.gallery img {
         width: 100%;
         height: auto;
+        image-orientation: -180deg;
       }
  
       .responsive {
@@ -217,3 +218,9 @@ span.psw {
 }
 */
 /*-------------------------------------------------------------------------------------*/
+
+
+            div.Hide {
+              visibility: hidden;
+            }
+      
