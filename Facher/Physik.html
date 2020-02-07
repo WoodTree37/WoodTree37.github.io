@@ -1,7 +1,21 @@
 <html>
 <head>
-    <title>Füsik</title>   
+    <title>Phüsik</title>   
     <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+    <script src="https://kit.fontawesome.com/047f4e48cc.js" crossorigin="anonymous"></script>
+
+    <script>
+      function Show4() {
+        document.getElementById("panel4").style.display = "block";
+      }
+      function Show5() {
+        document.getElementById("panel5").style.display = "block";
+      }
+      function Show6() {
+        document.getElementById("panel6").style.display = "block";
+      }
+      </script>
+
 </head>
 
 <body class="Home">
@@ -12,8 +26,15 @@
  
     <br> 
 
+    
 
-<h2>4.Klasse</h2>
+
+
+    <h2>4.Klasse <span class="flip" onclick="Show4()">  <i class="fas fa-sort-down"></i> </span> </h2> 
+
+
+<section id="panel4">
+
 <h3>Grundkurs 1 - Prüfung 1<a class="download" href="../Facher/Bilder/" download target=_blank>Download</a> </h3><br>
 
     <h4 class="Autor">Alessandro</h4>
@@ -154,11 +175,12 @@
           <br> <br>
       <div class="clearfix"></div> 
 
+</section>
 
 
 
-
-<h2>5.Klasse</h2>
+<h2>5.Klasse <span class="flip" onclick="Show5()">  <i class="fas fa-sort-down"></i> </span> </h2> 
+<section id=panel5>
 
 <h3>Grundkurs 3 - Prüfung 1<a class="download" href="../Facher/Bilder/" download target=_blank> Download!</a> </h3><br>
 
@@ -309,6 +331,9 @@
 
           <br> <br>
       <div class="clearfix"></div> 
+
+</section>
+
 
 </body>
 
