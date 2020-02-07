@@ -75,6 +75,11 @@ body {
     background-color: greenyellow;
     
     }
+
+    h4.Autor /*Beschriftung für Autorentitel*/ {
+      text-align: left;
+
+    }
     
  
     button.Home {
