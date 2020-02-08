@@ -85,7 +85,7 @@ div.TitelB {
 
     h3/* Übertitel der Prüfungen*/ {
     border-bottom: 2px groove black; /*Hier könnte jedweils die Hintergrundfareb, aber dünkler sein */
-    background-color: greenyellow;
+    background-color: goldenrod;
     
     }
 
@@ -245,6 +245,7 @@ span.psw {
             #panel4,#panel5, #panel6 {
               display: none;
             }
+          
             
       
             
