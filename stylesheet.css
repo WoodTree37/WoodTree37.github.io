@@ -32,35 +32,41 @@ body {
       }
 
 
+      /* Styling of Navigation bar */
+    nav {
+      position: sticky;
+      top: 0px;
 
-nav ul {
-  list-style: none;
-  position: sticky;
-  top: 0;
-  display: flex;
-  padding: 0;     /*Nötig?*/
-}
+      }
+    nav div {
+      display: flex;
+      margin-top: 8px;
+      text-align: center;
+      vertical-align: middle;   /* Warumgeht das nicht?*/   
+    }
 
-     nav  li {     
-        background-color: lightgreen;
-        flex: 1;
-        border: 2px solid green;   
-        z-index: 10; 
+     nav a { 
+        flex: 1; 
+        z-index: 10;   
+        background-color: lightgreen;        
+        border: 2px solid green; 
+        text-decoration: none;
+        border-radius: 2px;          
         padding-left: 10px;  
         height: 50px;
-        vertical-align: middle;   /* Warumgeht das nicht?*/
-        position: sticky;
-        top: 0;
+        margin-right: 1px;
+        margin-bottom: 2px;
+        min-width: 240px;             
       }
 
-      
+      nav a:hover {
+        background-color: rgba(0, 255, 0, 0.7);      
+      }      
 
     .Rollstuhl {
       position: fixed;
-      bottom: 0;
-      
+      bottom: 0;     
     }
-
 
     h2 {
         text-align: center;
@@ -75,7 +81,6 @@ nav ul {
 
     h4.Autor /*Beschriftung für Autorentitel*/ {
       text-align: left;
-
     }
     
     div.Button {
@@ -84,7 +89,6 @@ nav ul {
       flex-wrap: wrap;
       justify-content: center;
       justify-content: space-between;
-
     }
 
 
@@ -93,27 +97,20 @@ nav ul {
         text-align: center;
         padding: 60px 0px;  
         margin: 5px;
-         min-width: 250px;       
-        border-color: darkgreen;
-        border-radius: 5px;
-        border-width: 4px;
+        min-width: 250px;       
+        border-radius: 5px;      
         background-color: lightgreen;
         text-decoration: none;
     }
     a.Button:hover {
-      background-color: rgba(0, 255, 0, 0.7);
-      
+      background-color: rgba(0, 255, 0, 0.7);      
     }
 
             /*Links*/
     .link:link, .link:visited { 
         text-decoration: none;
-        color: black;  
-        border-color: green;
-        
-        border-radius: 5px;
-        border-width: 1px;
-        
+        color: black;        
+        border-radius: 5px;          
       }   
       .link:hover, .link:active link:focus {
         text-decoration: none;
