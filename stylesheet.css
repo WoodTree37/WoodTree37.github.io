@@ -80,14 +80,15 @@ nav ul {
  section.Button {
   /* column-count: 1;*/
     display: grid;
+    left: 0;
       grid-template-columns: 1fr 1fr 1fr 1fr;
  }
 
 
     a.Button {
         text-align: center;
-     
-        padding: 20px 0;                       
+
+        padding: 40px 0px;                       
         border-color: darkgreen;
         border-radius: 5px;
         border-width: 8px;
