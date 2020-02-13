@@ -77,21 +77,19 @@ nav ul {
 
     }
     
- section.Button {
-  /* column-count: 1;*/
-    display: grid;
-
-      grid-template-columns: 1fr 1fr 1fr 1fr;
- }
+    div.Button {
+      
+     
+    }
 
 
     a.Button {
         text-align: center;
-
-        padding: 40px 0px;                       
+        padding: 20px 10px;    
+        margin: 20px 10px;                  
         border-color: darkgreen;
         border-radius: 5px;
-        border-width: 8px;
+        border-width: 4px;
         background-color: lightgreen;
         text-decoration: none;
     }
