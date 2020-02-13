@@ -23,15 +23,12 @@ body {
   background-color: red;
 }
 
-    div.Titel {
-      max-width: 90%;     
-      text-align: center; 
-      color: darkblue;  
-      background-color: lightgreen;
-      top: 2px; 
+    div.Titel {          
+      text-align: center;  
+      background-color: lightgreen; 
       z-index: 10; 
-
-  height: 70px;
+      height: auto;
+      padding: 8px 0px;
       }
 
 
@@ -81,6 +78,8 @@ nav ul {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      justify-content: center;
+      justify-content: space-between;
 
     }
 
