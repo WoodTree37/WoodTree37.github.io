@@ -78,15 +78,15 @@ nav ul {
     }
     
     div.Button {
-      
+      column-width: 10em; 
      
     }
 
 
     a.Button {
         text-align: center;
-        padding: 20px 10px;    
-        margin: 20px 10px;                  
+        padding: 20px 0px;    
+         min-width: 120px;        
         border-color: darkgreen;
         border-radius: 5px;
         border-width: 4px;
@@ -137,12 +137,12 @@ nav ul {
       }
  
 
-      /* Section for mobile compability
+      /* Geht das?*/
       .responsive {
         padding: 0 6px;
         float: center;
         width: 24.99999%;
-      }*/
+      }
 
       .responsive5 {
         padding: 0 6px;
