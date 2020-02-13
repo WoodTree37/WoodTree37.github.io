@@ -80,7 +80,7 @@ nav ul {
  section.Button {
   /* column-count: 1;*/
     display: grid;
-    left: 0;
+
       grid-template-columns: 1fr 1fr 1fr 1fr;
  }
 
