@@ -43,7 +43,7 @@ nav ul {
   padding: 0;     /*Nötig?*/
 }
 
-      li {     
+     nav  li {     
         background-color: lightgreen;
         flex: 1;
         border: 2px solid green;   
@@ -80,7 +80,7 @@ nav ul {
  
     a.Button {
         text-align: center;
-  
+      column-width: 10em;
         padding: 20px 20px;                        
         border-color: darkgreen;
         border-radius: 5px;
