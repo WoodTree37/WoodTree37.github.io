@@ -78,7 +78,7 @@ nav ul {
     }
     
  
-    button.Home {
+    a.Button {
         text-align: center;
         width: 100%;
         height: auto;
@@ -87,8 +87,9 @@ nav ul {
         border-radius: 5px;
         border-width: 3px;
         background-color: rgba(0, 255, 0, 0.3);
+        text-decoration: none;
     }
-    button:hover {
+    a.Button:hover {
       background-color: rgba(0, 255, 0, 0.7);
       
     }
