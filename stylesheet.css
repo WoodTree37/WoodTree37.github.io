@@ -78,15 +78,19 @@ nav ul {
     }
     
     div.Button {
-      column-width: 10em; 
-     
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
     }
 
 
     a.Button {
+        flex: 1;
         text-align: center;
-        padding: 20px 0px;    
-         min-width: 120px;        
+        padding: 60px 0px;  
+        margin: 5px;
+         min-width: 250px;       
         border-color: darkgreen;
         border-radius: 5px;
         border-width: 4px;
