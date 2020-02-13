@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <script src="https://kit.fontawesome.com/047f4e48cc.js" crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    
        
 </head>
 
@@ -15,14 +17,10 @@
             <div class="Titel"> <h1>Welcome to the Website of N.T.</h1>  </div>  
         </header>
 
-        <nav>
-            <div class="Button">
-                <a  href="index.html" >  Home</a>        
-                <a  href="Contribution.html" >  Help</a>  
-                <a  href="Testseite.html" > Testseite</a> 
-            </div>  
-            <br>         
-        </nav> 
+        <!--Navigation bar-->
+        <div id="nav-placeholder"> </div>
+
+    <!--end of Navigation bar--> 
 
     <main>
         <section style="text-align: center;">           
@@ -64,6 +62,12 @@
     </footer>
 
 </body>
+
+<script>
+    $.get("navigationBar.html", function(data){
+        $("#nav").replaceWith(data);
+    });
+</script>
 
 <marquee class="Rollstuhl" scrollamount="18" direction="right" behavior="alternate"> <i class="fab fa-accessible-icon"></i></marquee>
 
