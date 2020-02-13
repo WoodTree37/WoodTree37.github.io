@@ -109,7 +109,8 @@ body {
             /*Links*/
     .link:link, .link:visited { 
         text-decoration: none;
-        color: black;        
+        color: black;  
+        text-align: center;      
         border-radius: 5px;          
       }   
       .link:hover, .link:active link:focus {
