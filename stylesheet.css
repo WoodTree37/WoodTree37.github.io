@@ -36,6 +36,7 @@ body {
 nav ul {
   list-style: none;
   position: sticky;
+  top: 0;
   display: flex;
   padding: 0;     /*Nötig?*/
 }
@@ -44,12 +45,15 @@ nav ul {
         background-color: lightgreen;
         flex: 1;
         border: 2px solid green;   
-        z-index: 10;   
+        z-index: 10; 
+        padding-left: 10px;  
+        height: 50px;
+        vertical-align: middle;   /* Warumgeht das nicht?*/
+        position: sticky;
+        top: 0;
       }
 
-      nav {
-        padding: 20px;
-      }
+      
 
     .Rollstuhl {
       position: fixed;
