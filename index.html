@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <script src="https://kit.fontawesome.com/047f4e48cc.js" crossorigin="anonymous"></script>
-    <script src="//code.jquery.com/jquery.min.js"></script>
+    
     
        
 </head>
@@ -18,8 +18,9 @@
         </header>
 
         <!--Navigation bar-->
-        <div id="nav-placeholder"> </div>
+        <link rel="import" href="nav.html">
 
+        
     <!--end of Navigation bar--> 
 
     <main>
@@ -63,11 +64,6 @@
 
 </body>
 
-<script>
-    $.get("navigationBar.html", function(data){
-        $("#nav").replaceWith(data);
-    });
-</script>
 
 <marquee class="Rollstuhl" scrollamount="18" direction="right" behavior="alternate"> <i class="fab fa-accessible-icon"></i></marquee>
 
