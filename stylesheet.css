@@ -103,7 +103,7 @@ nav ul {
         border-width: 1px;
         
       }   
-      .link:hover, .link:active {
+      .link:hover, .link:active link:focus {
         text-decoration: none;
         color:blue; 
       }
