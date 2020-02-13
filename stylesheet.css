@@ -80,12 +80,11 @@ nav ul {
  
     a.Button {
         text-align: center;
-        width: 100%;
-        height: auto;
-        padding: 20px 0;                        
-        border-color: green;
-        border-radius: 2px;
-        border-width: 3px;
+  
+        padding: 20px 20px;                        
+        border-color: darkgreen;
+        border-radius: 5px;
+        border-width: 8px;
         background-color: lightgreen;
         text-decoration: none;
     }
@@ -133,12 +132,12 @@ nav ul {
       }
  
 
-      /* Section for mobile compability*/
+      /* Section for mobile compability
       .responsive {
         padding: 0 6px;
         float: center;
         width: 24.99999%;
-      }
+      }*/
 
       .responsive5 {
         padding: 0 6px;
@@ -146,21 +145,6 @@ nav ul {
         width: 19.99999%;
       }
 
-      
-
-      @media only screen and (max-width: 700px) {
-        .responsive {
-          width: 49.99999%;
-          margin: 6px 0;
-        }
-      }
-
-      
-      @media only screen and (max-width: 500px) {
-        .responsive {
-          width: 100%;
-        }
-      }
  
 
             div.Hide {
