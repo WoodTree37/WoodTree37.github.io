@@ -82,11 +82,11 @@ nav ul {
         text-align: center;
         width: 100%;
         height: auto;
-        padding: 50px 0;                        
+        padding: 20px 0;                        
         border-color: green;
-        border-radius: 5px;
+        border-radius: 2px;
         border-width: 3px;
-        background-color: rgba(0, 255, 0, 0.3);
+        background-color: lightgreen;
         text-decoration: none;
     }
     a.Button:hover {
@@ -109,6 +109,8 @@ nav ul {
         color:blue; 
       }
  
+
+      /* Section for Image Gallery*/
       div.gallery {
         border: 1px solid #ccc;
         background-color: whitesmoke;
@@ -123,10 +125,18 @@ nav ul {
         height: auto;
         image-orientation: -180deg;
       }
+
+      div.desc {
+        padding: 15px;
+        text-align: center;
+        background-color: grey;
+      }
  
+
+      /* Section for mobile compability*/
       .responsive {
         padding: 0 6px;
-        float: left;
+        float: center;
         width: 24.99999%;
       }
 
@@ -136,11 +146,7 @@ nav ul {
         width: 19.99999%;
       }
 
-      div.desc {
-        padding: 15px;
-        text-align: center;
-        background-color: grey;
-      }
+      
 
       @media only screen and (max-width: 700px) {
         .responsive {
