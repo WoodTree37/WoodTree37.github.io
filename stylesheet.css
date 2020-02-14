@@ -141,18 +141,20 @@ body {
         background-color: grey;
       }
  
-
-      /* Geht das?*/
-      .responsive {
-        padding: 0 6px;
-        float: center;
-        width: 24.99999%;
+      section.flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: left;
+        justify-content: space-between;
       }
-
-      .responsive5 {
-        padding: 0 6px;
-        float: left;
-        width: 19.99999%;
+  
+  
+      div.flex {
+          flex: 1;
+          margin: 10px 10px;  
+          padding: 10px 10px;   
+          min-width: 220px;            
       }
 
  
