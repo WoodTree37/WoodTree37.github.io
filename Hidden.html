@@ -3,6 +3,12 @@
 
 <head>
     <title>Secret Webpage</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function(){
+          $("#nav-placeholder").load("nav.html");
+        });
+        </script>
    
        
 </head>
@@ -12,14 +18,7 @@
         <div> <h1>Welcome to the (secret) Website of N.T.</h1>  </div>  
     </header>
 
-    <nav>
-        <div class="Button">
-            <a  href="index.html" >  Home</a>        
-            <a  href="Contribution.html" >  Help</a>  
-            <a  href="Testseite.html" > Testseite</a> 
-        </div>  
-        <br>         
-    </nav> 
+    <div id="nav-placeholder"> </div>
 
     <main>   
         <p> Dies ist eine Testseite.</p>
