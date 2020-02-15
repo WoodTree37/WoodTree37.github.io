@@ -128,15 +128,14 @@ body {
       div.gallery:hover {
         border: 1px solid #777;
       }
-      
+    /*  
       div.gallery img {
-        width: 100%;
-        height: auto;
         image-orientation: -180deg;
       }
-
+*/
       div.desc {
         padding: 15px;
+        height: 100px;
         text-align: center;
         background-color: grey;
       }
@@ -148,17 +147,32 @@ body {
         justify-content: left;
         justify-content: space-between;
       }
-  
+    
   
       div.flex {
-          flex: 1;
-          margin: 10px 10px;  
-          padding: 10px 10px;   
-          min-width: 220px;            
+          flex: 1;   
+          min-width: 220px;  
+          padding: 0 4px; 
+          margin: 5px 2px;         
       }
+
+
+/*
+
+    a.Button {
+        flex: 1;
+        text-align: center;
+        padding: 60px 0px;  
+        margin: 5px;
+        min-width: 250px;       
+        border-radius: 5px;      
+        background-color: lightgreen;
+        text-decoration: none;
+    }
 
  
 
+*/
             div.Hide {
               visibility: hidden;
             }
