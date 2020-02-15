@@ -38,11 +38,19 @@ body {
     nav {
       position: sticky;
       top: 0px;
-      text-align: center; /**/ 
+      
+      }
+
+       .navbar {
+        display: none;
       }
 
     nav div {
       display: flex; 
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      justify-content: space-between;
        
     }
 
@@ -94,7 +102,6 @@ body {
       .show, .dropdown-content a {
         display: block;
       }
-
 
 
     .Rollstuhl {
@@ -200,30 +207,7 @@ body {
               display: none;
             }
 
-.navSmall {
-  display: none;
-}
 
 
- @media (max-width: 220px) {
-   .navSmall {
-    display: block;
-   }
 
-   .navBig {
-    display: bnone;
-   }
- }
 
- @media (max-width: 220px) {
-  .navSmall {
-   display: none;
-  }
-  .navSmall {
-    display: block;
-   }
-}
-          
-            
-      
-            

@@ -7,7 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
         <script src="https://kit.fontawesome.com/047f4e48cc.js" crossorigin="anonymous"></script>
-      
+        <script src="scripts.js"></script>
+
+  
       
     </head>
 
@@ -16,9 +18,11 @@
         <div class="Titel" > <h1>Welcome to the (secret) Website of N.T.</h1>  </div>  
     </header>
 
+
+    
     <nav>         
-        <div class="navSmall" class="navbar">
-            <button class="dropbtn" onclick="myFunction()">III<i class="fa fa-caret-down"></i></button>
+        <div id="navsmall" class="navbar">
+            <button class="dropbtn" onclick="Drop()">III<i class="fa fa-caret-down"></i></button>
                  <div class="dropdown-content" id="myDropdown">
                     <a  href="index.html" >  Home</a>        
                     <a  href="Contribution.html" >  Help</a>  
@@ -26,32 +30,16 @@
                 </div>
         </div> 
         
-        <div class="navBig" class="Button">
+        <div id="navbig" >
             <a  href="index.html" >  Home</a>        
             <a  href="Contribution.html" >  Help</a>  
             <a  href="Testseite.html" > Testseite</a> 
         </div> 
-
+    
     </nav>
 
-
-    <script>
-        /* When the user clicks on the button, 
-        toggle between hiding and showing the dropdown content */
-        function myFunction() {
-          document.getElementById("myDropdown").classList.toggle("show");
-        }
-        
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function(e) {
-          if (!e.target.matches('.dropbtn')) {
-          var myDropdown = document.getElementById("myDropdown");
-            if (myDropdown.classList.contains('show')) {
-              myDropdown.classList.remove('show');
-            }
-          }
-        }
-        </script>
+    <button onclick="Small()" >Small</button> 
+    <button onclick="Big()" >Big</button> 
 
     <main>   
         <p> Dies ist eine Testseite.</p>
@@ -59,7 +47,7 @@
 
         <p>Hier könnte etwas geheimes stehen. </p>
 
-
+<!--
         
         <img src="Bilder/Deutsch/5. Klasse/Aufklärung.pdf" alt="Klassic">
         <a href="../WoodTree37.github.io/Facher/Bilder/Deutsch/5. Klasse/Aufklärung.pdf" target="_blank" >Link</a>
@@ -71,8 +59,9 @@
         <embed src="../WoodTree37.github.io/Facher/Bilder/Deutsch/5. Klasse/Aufklärung.pdf" width="300" height="400"  type="application/pdf" frameborder="0" allowfullscreen>
       
         </main> 
-
+    -->
 </body>
+
 
 
 
