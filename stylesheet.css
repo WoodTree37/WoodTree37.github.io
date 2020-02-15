@@ -129,10 +129,11 @@ body {
         border: 1px solid #777;
       }
       
- /*     div.gallery img {
+      div.gallery img {
+      width: 10%;
         image-orientation: -180deg;
       }
-*/
+
       div.desc {
         padding: 15px;
         height: 100px;
