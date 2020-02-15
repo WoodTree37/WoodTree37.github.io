@@ -16,40 +16,31 @@
         }
      
 
-/*
-    var x = window.matchMedia("(max-width: 400px)")
-        Size(x) // Call listener function at run time
         
-        //Funktion zum Wechsel zwischen den NavBars
-        function Size(x) {
-            if (x.matches) { // If media query matches
-               
-              */
-function Size(x) {
-    var x = window.innerWidth
-        
-    if(x<=400){
-        Small();
+//Funktion zum Wechsel zwischen den NavBars           
+    function Size() {
+        var x = window.innerWidth
+            
+        if(x<=600){
+            Small();
+        }
+        else {
+            Big();
+        } 
     }
-    else {
-        Big();
-    }
-  
-}
 
-             function Small() { 
+            function Small() { 
                 {
-                    document.getElementById("navsmall").style.display = "flex";
-                  
+                    document.getElementById("navsmall").style.display = "flex";                 
                     document.getElementById("navbig").style.display = "none";
-                  }
+                }
             } 
 
             function Big() {
-             {
-                document.getElementById("navbig").style.display = "flex";
-                document.getElementById("navsmall").style.display = "none";        
-              }
-          }
+                {
+                    document.getElementById("navbig").style.display = "flex";
+                    document.getElementById("navsmall").style.display = "none";        
+                }
+            }
 
 
