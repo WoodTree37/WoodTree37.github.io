@@ -33,102 +33,67 @@ body {
       }
 
 
+      
       /* Styling of Navigation bar */
     nav {
       position: sticky;
       top: 0px;
-
+      text-align: center; /**/ 
       }
+
     nav div {
-      display: flex;
-      margin-top: 0px;
-      text-align: center;
-      vertical-align: middle;   /* Warumgeht das nicht?*/   
+      display: flex; 
+       
     }
 
-     nav a  { 
+     nav a, .navbar, .navbar a { 
         flex: 1; 
         z-index: 10;   
-        background-color: lightgreen;        
-        border: 2px solid green; 
+         
         text-decoration: none;
-        border-radius: 2px;          
-        padding-left: 10px;  
+        text-align: center; 
+
+        background-color: lightgreen;        
+        border: 2px solid green;
+        border-radius: 2px;                
+        padding-left: 10px; 
+        padding-top: 10px; 
         height: 50px;
         margin-right: 1px;
         margin-bottom: 2px;
-        min-width: 240px;             
+        min-width: 240px;  
+        cursor: pointer;                
       }
 
-      nav a:hover {
-        background-color: rgba(0, 255, 0, 0.7);      
+
+      nav a:hover, .navbar:hover, .dropdown-content a:hover {
+        background-color: rgb(0, 240, 0);     
       }    
 
-      /*Dropdown NavigationBar*/
-      .navbar {
-        overflow: hidden;
-        background-color: #333;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      
-      .navbar a {
-        float: left;
-        font-size: 16px;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
-      
-      .dropdown {
-        float: left;
-        overflow: hidden;
-      }
-      
-      .dropdown .dropbtn {
+      /*Dropdown NavigationBar*/    
+       .dropbtn {
         cursor: pointer;
-        font-size: 16px;  
+        font-size: 16px;
+        padding-bottom: 10px;  
         border: none;
-        outline: none;
-        color: white;
-        padding: 14px 16px;
         background-color: inherit;
-        font-family: inherit;
-        margin: 0;
+        padding-left: 49%; 
       }
-      
-      .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-        background-color: red;
-      }
-      
+
       .dropdown-content {
         display: none;
         position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        top: 52px;
+        left: 0;
+        width: 100%;
         z-index: 1;
-      }
+        
+      }      
       
-      .dropdown-content a {
-        float: none;
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-      }
-      
-      .dropdown-content a:hover {
-        background-color: #ddd;
-      }
-      
-      .show {
+      .show, .dropdown-content a {
         display: block;
       }
 
-
-     
 
 
     .Rollstuhl {
@@ -171,7 +136,7 @@ body {
         text-decoration: none;
     }
     a.Button:hover {
-      background-color: rgba(0, 255, 0, 0.7);      
+      background-color: rgb(0, 240, 0);     
     }
 
             /*Links*/
@@ -226,22 +191,6 @@ body {
       }
 
 
-/*
-
-    a.Button {
-        flex: 1;
-        text-align: center;
-        padding: 60px 0px;  
-        margin: 5px;
-        min-width: 250px;       
-        border-radius: 5px;      
-        background-color: lightgreen;
-        text-decoration: none;
-    }
-
- 
-
-*/
             div.Hide {
               visibility: hidden;
             }
