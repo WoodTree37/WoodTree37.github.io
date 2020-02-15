@@ -128,8 +128,8 @@ body {
       div.gallery:hover {
         border: 1px solid #777;
       }
-    /*  
-      div.gallery img {
+      
+ /*     div.gallery img {
         image-orientation: -180deg;
       }
 */
