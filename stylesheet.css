@@ -199,6 +199,30 @@ body {
             #panel4,#panel5, #panel6 {
               display: none;
             }
+
+.navSmall {
+  display: none;
+}
+
+
+ @media (max-width: 220px) {
+   .navSmall {
+    display: block;
+   }
+
+   .navBig {
+    display: bnone;
+   }
+ }
+
+ @media (max-width: 220px) {
+  .navSmall {
+   display: none;
+  }
+  .navSmall {
+    display: block;
+   }
+}
           
             
       
