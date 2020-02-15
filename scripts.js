@@ -15,36 +15,7 @@
             }
         }
      
-/*
-        var x = window.matchMedia("(max-width: 400px)")
-        Size(x) // Call listener function at run time
-        x.addListener(Size) // Attach listener function on state changes
-  */      
-        /*Funktion zum Wechsel zwischen den NavBars*//*
-          function Size(x) {
-                if (x.matches) { // If media query matches
-                    {
-                        document.getElementById("navsmall").style.display = "block";
-                    }
-                        {
-                            document.getElementById("navsmall").style.display = "none";
-                        }
-                } 
-                else {
-                    document.getElementById("navsmall").style.display = "none";
-                }
-                {
-                    document.getElementById("navsmall").style.display = "block";
-                }
-            }
-        }
-          */
-         
 
-function Test() {
-    document.getElementById("navsmall").style.display = "block";
-
-}
 /*
     var x = window.matchMedia("(max-width: 400px)")
         Size(x) // Call listener function at run time
@@ -54,6 +25,18 @@ function Test() {
             if (x.matches) { // If media query matches
                
               */
+function Size(x) {
+    var x = window.innerWidth
+        
+    if(x<=400){
+        Small();
+    }
+    else {
+        Big();
+    }
+  
+}
+
              function Small() { 
                 {
                     document.getElementById("navsmall").style.display = "flex";
