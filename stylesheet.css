@@ -42,7 +42,7 @@ body {
       }
 
       .navbig, .navbar {
-        display: none;
+        display: flex;    /*default as none*/
       }
 
     nav div {

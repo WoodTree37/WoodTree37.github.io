@@ -8,11 +8,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <script src="https://kit.fontawesome.com/047f4e48cc.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script>
-        $(function(){
-          $("#nav-placeholder").load("nav.html");
-        });
-    </script>
+    
   
 </head>
 
@@ -21,16 +17,28 @@
             <div class="Titel"> <h1>Welcome to the Website of N.T.</h1>  </div>  
         </header>
 
-        <nav>
-            <div class="Button">
-                <a  href="index.html" >  Home</a>        
-                <a  href="Contribution.html" >  Help</a>  
-                <a  href="Testseite.html" > Testseite</a> 
-                <a  href="Hidden.html" > Hidden</a> 
-            </div>  
-            <br>         
-        </nav>
+    <nav>
+        <div id="navsmall" class="navbar">
+            <button class="dropbtn" onclick="Drop()">III<i class="fa fa-caret-down"></i></button>
+                 <div class="dropdown-content" id="myDropdown">
+                    <a  href="index.html" >  Home</a>        
+                    <a  href="Contribution.html" >  Help</a>  
+                    <a  href="Testseite.html" > Testseite</a> 
+                </div>
+        </div> 
         
+        <div id="navbig" class="navbig" >
+            <a  href="index.html" >  Home</a>        
+            <a  href="Contribution.html" >  Help</a>  
+            <a  href="Testseite.html" > Testseite</a> 
+        </div> 
+    </nav>
+
+    <script>
+        Size() // Call listener function at run time
+        window.addEventListener("resize", Size);
+        window.addEventListener("load", Size);  //required?
+    </script>
         
 
     <main>
@@ -65,15 +73,15 @@
         </div>
 
     </main>
-    
+      
      
     <footer>     
         <p>This is the End of the page </p>
     </footer>
 
+    
 </body>
 
 <marquee class="Rollstuhl" scrollamount="18" direction="right" behavior="alternate"> <i class="fab fa-accessible-icon"></i></marquee>
-
 
 </html>
