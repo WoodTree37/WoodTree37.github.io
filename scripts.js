@@ -21,7 +21,7 @@
     function Size() {
         var x = window.innerWidth
             
-        if(x<=600){
+        if(x<=800){
             Small();
         }
         else {
