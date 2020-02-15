@@ -41,7 +41,10 @@ body {
       
       }
 
-      .navbig, .navbar {
+       .navbar {
+        display: none;    /*default as none*/
+      }
+      .navbig  {
         display: flex;    /*default as none*/
       }
 
