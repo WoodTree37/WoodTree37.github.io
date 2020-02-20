@@ -67,7 +67,6 @@ body {
         background-color: lightgreen;        
         border: 2px solid green;
         border-radius: 2px;                
-        padding-left: 10px; 
         padding-top: 10px; 
         height: 50px;
         margin-right: 1px;
@@ -89,7 +88,7 @@ body {
         border: none;
         outline: none;
         background-color: inherit;
-        margin-left: 47%;
+        padding-left: 50%;
       }
 
       .dropdown-content {
