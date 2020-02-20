@@ -167,6 +167,7 @@ body {
       div.gallery {
         border: 1px solid #ccc;
         background-color: whitesmoke;
+        width: 100%;
       }
       
       div.gallery:hover {
