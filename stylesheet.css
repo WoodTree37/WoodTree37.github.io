@@ -167,7 +167,7 @@ body {
       div.gallery {
         border: 1px solid #ccc;
         background-color: whitesmoke;
-        width: 100%;
+        text-align: center;
       }
       
       div.gallery:hover {
@@ -175,7 +175,7 @@ body {
       }
       
       div.gallery img {
-      width: 10%;
+      width: 100%;
         image-orientation: -180deg;
       }
 

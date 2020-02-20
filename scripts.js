@@ -27,6 +27,8 @@
         else {
             Big();
         } 
+        window.addEventListener("resize", Size);
+        window.addEventListener("load", Size);  //required?
     }
 
             function Small() { 
