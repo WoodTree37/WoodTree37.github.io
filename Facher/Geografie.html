@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="Englisch" >
+<html lang="de" >
 
-<head>
+  <head>
     <title>Geografie</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nick Truttmann">
+    <meta name="description" content="Dies ist die Seite der alten Geografie-Prüfungen.">  
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
     <link rel="stylesheet" type="text/css" href="../stylesheet.css">
     <script src="https://kit.fontawesome.com/047f4e48cc.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -22,17 +27,38 @@
         <div class="Titel"> <h1>Dies ist die Seite der alten Geografie-Prüfungen.</h1>  </div>  
     </header>
 
-    <!--Imported NavBar-->
+    <!--NavBar-->
     <nav>
-        <div id="nav-placeholder"> </div>
-    </nav> 
+        <div id="navsmall" class="navbar">
+            <button class="dropbtn" onclick="Drop()"><i class="fas fa-bars"></i></button>
+                 <div class="dropdown-content" id="myDropdown">
+                    <a  href="index.html" >  Home</a>        
+                    <a  href="Contribution.html" >  Help</a>  
+                    <a  href="Testseite.html" > Testseite</a> 
+                </div>
+        </div> 
+        
+        <div id="navbig" class="navbig" >
+            <a  href="index.html" >  Home</a>        
+            <a  href="Contribution.html" >  Help</a>  
+            <a  href="Testseite.html" > Testseite</a> 
+            <a  href="Hidden.html" > Hidden</a> 
+        </div> 
+    </nav>
 
-    <h2>Prüfungen von M.Brühlmeier </h2> 
+    <script>
+        Size() // Call listener function at run time
+        window.addEventListener("resize", Size);
+        window.addEventListener("load", Size); 
+    </script>
+
+
+    <main>
+          <h2>Prüfungen von M.Brühlmeier </h2> 
 
     <h4 class="Autor">Nick T.</h4>
     <section class="flex">
-       
-              
+                
                 <div class="flex gallery">
                     <a target="_blank" href="Bilder/Geografie/Population.pdf">
                       <embed src="Bilder/Geografie/Population.pdf" alt="Population"  height="400"> 
@@ -55,15 +81,13 @@
                     </a>
                   <div class="desc">Raumplanung<br> <a class="download" href="Bilder/Geografie/Raumplanung.pdf" download > Download</a>
                   </div>
-                </div> <br> 
-    
+                </div> <br>  
     </section><br> 
 
 
-    <h4 class="Autor">Cyrill Z.</h4>
+          <h4 class="Autor">Cyrill Z.</h4>
     <section class="flex">
-       
-              
+                  
                 <div class="flex gallery">
                     <a target="_blank" href="Bilder/Geografie/Population_C.Z.pdf">
                       <embed src="Bilder/Geografie/Population_C.Z.pdf" alt="Population"  height="400"> 
@@ -103,17 +127,15 @@
                 <div class="desc">Economic Geography 2<br> <a class="download" href="Bilder/Geografie/Economic Geography2_C.Z.pdf" download > Download</a>
                 </div>
               </div> <br> 
-
     </section><br> 
 
 
 
-    <h2>Prüfungen von M.Flury</h2> 
+          <h2>Prüfungen von M.Flury</h2> 
 
     <h4 class="Autor">Alessandro F.</h4>
     <section class="flex">
-       
-              
+                    
                 <div class="flex gallery">
                     <a target="_blank" href="Bilder/Geografie/Wirtschaftsgeographie.pdf">
                       <embed src="Bilder/Geografie/Wirtschaftsgeographie.pdf" alt="Wirtschaftsgeographie"  height="400"> 
@@ -153,9 +175,9 @@
           <div class="desc">Fischerei<br><a class="download" href="Bilder/Geografie/Fischerei.pdf" download > Download</a>
           </div>
         </div> <br>
-
-
   </section>
+
+    </main>
     
 </body>
 

@@ -19,6 +19,15 @@ body {
   clear: both;
   display: table;
 }
+
+span {
+  float:left;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
 .download:hover, .download:active {
   background-color: red;
 }

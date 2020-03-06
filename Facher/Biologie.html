@@ -6,8 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Nick Truttmann">
-    <meta name="description" content="Dies ist die Home Seite der Website von Nick Truttmann. 
-                            Auf der Webseite können alte Gymi Prüfungen angesehen werden.">  
+    <meta name="description" content="Dies ist die Home Seite der Website von Nick Truttmann. Auf der Webseite können alte Gymi Prüfungen angesehen werden.">  
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
 
@@ -19,7 +18,7 @@
       $(function(){
         $("#nav-placeholder").load("../nav.html");
       });
-      </script>  
+    </script>  
   
 </head>
 
@@ -28,20 +27,40 @@
     <div class="Titel"> <h1>Dies ist die Seite der alten Biologie-Prüfungen.</h1>  </div>  
 </header>
 
-<!--Imported NavBar-->
+<!--NavBar-->
 <nav>
-  <div id="nav-placeholder"> </div>
-</nav>
+        <div id="navsmall" class="navbar">
+            <button class="dropbtn" onclick="Drop()"><i class="fas fa-bars"></i></button>
+                 <div class="dropdown-content" id="myDropdown">
+                    <a  href="../index.html" >  Home</a>        
+                    <a  href="../Contribution.html" >  Help</a>  
+                    <a  href="../Testseite.html" > Testseite</a> 
+                </div>
+        </div> 
+        
+        <div id="navbig" class="navbig" >
+            <a  href="../index.html" >  Home</a>        
+            <a  href="../Contribution.html" >  Help</a>  
+            <a  href="../Testseite.html" > Testseite</a> 
+            <a  href="../Hidden.html" > Hidden</a> 
+        </div> 
+    </nav>
+
+    <script>
+        Size() // Call listener function at run time
+        window.addEventListener("resize", Size);
+        window.addEventListener("load", Size);  
+    </script>
 
 
-<h3>Evolution <a class="download" href="../Facher/Bilder/Biologie/EvolutionZ.zip" download target=_blank>Download</a> </h3><br>
+<h3>Evolution <a class="download" href="../Facher/Bilder/Biologie/EvolutionZ.zip" download target=_blank>Download</a> </h3>
   <section class="flex">
           
             <div class="flex gallery">
               <a target="_blank" href="Bilder/Biologie/Evolution/Evolution1.png">
-                <img src="Bilder/Biologie/Evolution/Evolution1.png" alt="Evolution p.1" >
+                <img src="Bilder/Biologie/Evolution/Evolution1.png" alt="Evolution p.1">
               </a>            
-          </div>
+            </div>
 
 
             <div class="flex gallery">
@@ -57,7 +76,6 @@
             </div>
          
 
- 
             <div class="flex gallery">
               <a target="_blank" href="Bilder/Biologie/Evolution/Evolution4.png">
                 <img src="Bilder/Biologie/Evolution/Evolution4.png" alt="Evolution p.4" >
@@ -66,8 +84,8 @@
         
 
   </section>
-<br> <br> <br> <br> <br> <br> 
-<h3>Gehirn <a class="download" href="../Facher/Bilder/Biologie/GehirnZ.zip" download target=_blank>Download</a> </h3><br>
+<br> <br> <br> <br>
+<h3>Gehirn <a class="download" href="../Facher/Bilder/Biologie/GehirnZ.zip" download target=_blank>Download</a> </h3>
     
   <section class="flex" >
 
