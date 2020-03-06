@@ -20,13 +20,6 @@ body {
   display: table;
 }
 
-span {
-  float:left;
-  content: "";
-  clear: both;
-  display: table;
-}
-
 
 .download:hover, .download:active {
   background-color: red;
@@ -43,7 +36,7 @@ span {
 
 
       
-      /* Styling of Navigation bar */
+      /* Styling of Navigation bar, currently under development */
     nav {
       position: sticky;
       top: 0px;
@@ -51,13 +44,13 @@ span {
       }
 
        .navbar {
-        display: none;    /*default as none*/
+        display: none;   /*Normally the big navbar is displayed*/
       }
       .navbig  {
-        display: flex;    /*default as none*/
+        display: flex;  /*As soons as the small navbar is required, this will be changed(Script)*/
       }
 
-    nav div {
+    nav div {           /*Container for flexbox (NavBar) */
       display: flex; 
       flex-direction: row;
       flex-wrap: wrap;
@@ -66,7 +59,7 @@ span {
        
     }
 
-     nav a, .navbar, .navbar a { 
+     nav a, .navbar, .navbar a {  /*Elements for Flexbox --> the Buttons (NavBar)  */
         flex: 1; 
         z-index: 10;   
          
@@ -85,7 +78,7 @@ span {
       }
 
 
-      nav a:hover, .navbar:hover, .dropdown-content a:hover {
+      nav a:hover, .navbar:hover, .dropdown-content a:hover { /*Change the color of the Buttons on hover*/
         background-color: rgb(0, 240, 0);     
       }    
 
@@ -100,7 +93,7 @@ span {
         padding-left: 50%;
       }
 
-      .dropdown-content {
+      .dropdown-content { 
         display: none;
         position: absolute;
         top: 52px;
@@ -114,7 +107,7 @@ span {
         display: block;
       }
 
-
+        /*Marque, currently disable to reduce eye cancer*/
     .Rollstuhl {
       position: fixed;
       bottom: 0;     
@@ -125,17 +118,18 @@ span {
         color: black;
     }
 
-    h3/* Übertitel der Prüfungen*/ {
+    h3            /* Übertitel der Prüfungen*/ {
     border-bottom: 2px groove black; /*Hier könnte jedweils die Hintergrundfareb, aber dünkler sein */
     background-color: goldenrod;
     
     }
 
-    h4.Autor /*Beschriftung für Autorentitel*/ {
+    h4.Autor      /*Beschriftung für Autorentitel*/ {
       text-align: left;
     }
-    
-    div.Button {
+
+            
+    div.Button {  /*Container for Flexbox (Fächerbuttons) */
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -144,7 +138,7 @@ span {
     }
 
 
-    a.Button {
+    a.Button {  /*Elements for Flexbox (Fächerbuttons-Buttons) */
         flex: 1;
         text-align: center;
         padding: 60px 0px;  
@@ -154,25 +148,25 @@ span {
         background-color: lightgreen;
         text-decoration: none;
     }
-    a.Button:hover {
+    a.Button:hover {  /*Change the color of the Buttons on hover*/
       background-color: rgb(0, 240, 0);     
     }
 
-            /*Links*/
+            /*generally links*/
     .link:link, .link:visited { 
-        text-decoration: none;
+        text-decoration: none;  /*Disable underline*/
         color: black;  
         text-align: center;      
         border-radius: 5px;          
       }   
-      .link:hover, .link:active link:focus {
+      .link:hover, .link:active link:focus {  /*Mark links as such on hover*/
         text-decoration: none;
         color:blue; 
       }
  
 
-      /* Section for Image Gallery*/
-      div.gallery {
+      /* Section for Image Gallery (Backdrop of images) */
+      div.gallery { 
         border: 1px solid #ccc;
         background-color: whitesmoke;
         text-align: center;
@@ -187,14 +181,14 @@ span {
         image-orientation: -180deg;
       }
 
-      div.desc {
+      div.desc {      /*Beschreibungstexte für PDF's*/
         padding: 15px;
         height: 100px;
         text-align: center;
         background-color: grey;
       }
  
-      section.flex {
+      section.flex {  /*Container for Flexbox (Bilder-Box) */
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -203,7 +197,7 @@ span {
       }
     
   
-      div.flex {
+      div.flex {      /*Elements for Flexbox (Bilder) */
           flex: 1;   
           min-width: 220px;  
           padding: 0 4px; 
@@ -211,10 +205,7 @@ span {
       }
 
 
-            div.Hide {
-              visibility: hidden;
-            }
-
+                      /*Die Physik sektionen sind standardmässig nicht sichtbar. Under Development!*/
             #panel4,#panel5, #panel6 {
               display: none;
             }

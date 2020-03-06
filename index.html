@@ -6,12 +6,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Nick Truttmann">
-    <meta name="description" content="Dies ist die Home Seite der Website von Nick Truttmann. 
-                            Auf der Webseite können alte Gymi Prüfungen angesehen werden.">  
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Dies ist die Home Seite der Website von Nick Truttmann. Auf der Webseite können alte Gymi Prüfungen angesehen werden.">  
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!--Einbettung des Favicon-->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">   <!--Einbettung des Stylsheets-->
     <script src="https://kit.fontawesome.com/047f4e48cc.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="scripts.js"></script>
@@ -24,6 +23,7 @@
         <div class="Titel"> <h1>Welcome to the Website of N.T.</h1>  </div>  
     </header>
 
+        <!--Navigation menue-->
     <nav>
         <div id="navsmall" class="navbar">
             <button class="dropbtn" onclick="Drop()"><i class="fas fa-bars"></i></button>
@@ -43,20 +43,19 @@
     </nav>
 
     <script>
-        Size() // Call listener function at run time
+        Size() // Call listener function at run time. This ensures correct adaptation to variating screen sizes. 
         window.addEventListener("resize", Size);
-        window.addEventListener("load", Size);  //required?
+        window.addEventListener("load", Size);  
     </script>
         
 
     <main>
         <section>          
                 <h2>And this is a project of EFI 2020.</h2>            
-                <br> 
-           
+                <br>           
         </section>
 
-        <section>
+        <section>  <!--Dies ist der Erste Abschnit mit den Buttons zu den Grundlagenfächern.-->
             <div class="Button">          
                 <a class="Button"  href="Facher/Biologie.html">Biologie</a>
                 <a class="Button"  href="Facher/Deutsch.html">Deutsch</a>
@@ -71,14 +70,14 @@
                 <a class="Button"  href="Facher/Franz.html">Französisch</a> 
                 <a class="Button"  href="Facher/TestFach.html">Testfach</a>      
             
-                <a style="display: none;" class="Button"  href="Facher/Testfach.html">Testfach</a>                
-                <a style="display: none;" class="Button"  href="Facher/Testfach.html">Testfach</a>      
+                <a style="display: none;" class="Button"  href="Facher/Testfach.html">Testfach</a> <!--Diese Buttons sind bereits als reserve für die ZUkunft.-->          
+                <a style="display: none;" class="Button"  href="Facher/Testfach.html">Testfach</a> <!--Sie beeinflussen die Flexbox nicht.-->     
                 <a style="display: none;" class="Button"  href="Facher/Testfach.html">Testfach</a>                
             </div>
         </section>
 
 
-        <section>
+        <section>  <!--Hier sind die Buttons zu den SPF's.-->
             <h5>SPF/EF</h5>
                 <div class="Button">
                     <a class="Button"  href="Facher/PAM.html">PAM</a>
