@@ -1,42 +1,64 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="de" >
     <head>
-        <title>Website of N.T. - Testseite</title>
-        
+        <title>Testseite</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Nick Truttmann">
+        <meta name="description" content="Dies ist eine Testseite und Liste der zu erledigenden Dinge.">  
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
-        <script src="https://kit.fontawesome.com/047f4e48cc.js" crossorigin="anonymous"></script>        
+        <script src="https://kit.fontawesome.com/047f4e48cc.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="scripts.js"></script>  
     </head>
 
-<body>
+<body class="Home">
     <header>
-         <h1>Welcome to the Website of N.T.</h1> 
+        <div class="Titel"> <h1>Welcome to the Website of N.T.</h1>  </div>  
     </header>
 
+        <!--Navigation menue-->
+ <nav>
+    <div id="navsmall" class="navbar">
+        <button class="dropbtn" onclick="Drop()"><i class="fas fa-bars"></i></button>
+             <div class="dropdown-content" id="myDropdown">
+                <a  href="index.html" >  Home</a>        
+                <a  href="Contribution.html" >  Help</a>  
+                <a  href="Testseite.html" > Testseite</a> 
+            </div>
+    </div> 
+    
+    <div id="navbig" class="navbig" >
+        <a  href="index.html" >  Home</a>        
+        <a  href="Contribution.html" >  Help</a>  
+        <a  href="Testseite.html" > Testseite</a> 
+    </div> 
+</nav>
+
     <main>
-<span>
-This onyl serves nothing: NOTHING!
-    <ul>
-        <li>hALLo     </li>
-        <li>Zwei</li>
-        <li>Drei</li>
-
-    </ul>
-
-</span>
-
-        <h5>Things to be added:</h5>
+        <h3>Things to be added:</h3>
         <ul>
             <li>Improved Menue/Sidebar. Mobile compatible. <i class="fas fa-thumbs-up"></i></li>
             <li>Making viewing Images possible <i class="fas fa-thumbs-up"></i></li>
-            <li>Add more Content</li>
+            <li>Make navigation menue formobile acessible through one button.<i class="fas fa-thumbs-up"></i></li>
             <li>Improve Mobile compability - Sort of done</li>
-            <li>Make navigation menue formobile acessible through one button.</li>
-            <li>Make navigation bar sticky.</li>        
+            <br>
+
+            <li>Make NavBar imported to make Changes more easy.</li> 
+            <ol>
+                <li>Ensure this Navbar is imported correctly</li>
+                <li>Ensure the responsiveness isn't lost.</li>
+            </ol>   
+            <li>Add form to submit content. (Help)</li>
+            <li>Add more Content</li> 
+            <li>Better favicon!</li>
+            <li>Shorten loadingtimes</li>
+
+            <li>Fix widths of elements in Deutsch. </li> 
         </ul>
-
-
-
-      
 
     </main>
 

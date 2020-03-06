@@ -33,17 +33,16 @@
                     <a  href="Testseite.html" > Testseite</a> 
                 </div>
         </div> 
-        
+        <!--Both menus are drawn and the unnescessary one ist then removed. This only work when loaded with a server!!-->
         <div id="navbig" class="navbig" >
             <a  href="index.html" >  Home</a>        
             <a  href="Contribution.html" >  Help</a>  
             <a  href="Testseite.html" > Testseite</a> 
-            <a  href="Hidden.html" > Hidden</a> 
         </div> 
     </nav>
 
     <script>
-        Size() // Call listener function at run time. This ensures correct adaptation to variating screen sizes. 
+        Size() // Call listener function at run time. This ensures correct adaptation to variating screen sizes. Only with a server!!
         window.addEventListener("resize", Size);
         window.addEventListener("load", Size);  
     </script>
