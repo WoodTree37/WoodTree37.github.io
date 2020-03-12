@@ -180,6 +180,9 @@ body {
       width: 100%;
         image-orientation: -180deg;
       }
+      div.gallery embed {
+        width: 100%;
+      }
 
       div.desc {      /*Beschreibungstexte für PDF's*/
         padding: 15px;
