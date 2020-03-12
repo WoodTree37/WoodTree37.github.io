@@ -20,8 +20,8 @@ body {
   display: table;
 }
 .download {
-  background-color: darkgray;
   border-radius: 3px;
+  border-color: red;
   text-decoration: none;
   padding: 1px;
 }
