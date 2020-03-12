@@ -19,10 +19,15 @@ body {
   clear: both;
   display: table;
 }
-
+.download {
+  background-color: darkgray;
+  border-radius: 3px;
+  text-decoration: none;
+  padding: 1px;
+}
 
 .download:hover, .download:active {
-  background-color: red;
+  color: red;
 }
 
     div.Titel {          
