@@ -1,19 +1,17 @@
 * {
   box-sizing: border-box;
   font-family: Verdana, Arial, sans-serif;  
-   
-    color: black;
+  color: black;
 }
+
 body.Home {
     background-color: lightblue;
     }
+
 body {
-  font-family: Verdana, Arial, sans-serif;
-  color: black;
   font-size: 1.1em;
   }
   
-
 .clearfix::after {
   content: "";
   clear: both;
@@ -37,8 +35,6 @@ body {
       padding: 8px 0px;
       margin-bottom: 4px;
       }
-
-
       
       /* Styling of Navigation bar, currently under development */
     nav {
@@ -78,12 +74,14 @@ body {
         margin-right: 1px;
         margin-bottom: 2px;
         min-width: 240px;  
-        cursor: pointer;                
+        cursor: pointer; 
+                     
       }
 
 
       nav a:hover, .navbar:hover, .dropdown-content a:hover { /*Change the color of the Buttons on hover*/
-        background-color: rgb(0, 240, 0);     
+        background-color: rgb(0, 240, 0); 
+         
       }    
 
       /*Dropdown NavigationBar*/    
@@ -95,6 +93,7 @@ body {
         outline: none;
         background-color: inherit;
         padding-left: 50%;
+        transform: scale(1.05);
       }
 
       .dropdown-content { 
@@ -153,7 +152,9 @@ body {
         text-decoration: none;
     }
     a.Button:hover {  /*Change the color of the Buttons on hover*/
-      background-color: rgb(0, 240, 0);     
+      background-color: rgb(0, 240, 0); 
+      transform: scale(0.9);   
+      z-index: -1;  
     }
 
             /*generally links*/
@@ -178,15 +179,19 @@ body {
       
       div.gallery:hover {
         border: 1px solid #777;
+        
       }
       
       div.gallery img {
       width: 100%;
         image-orientation: -180deg;
+        transform: scale(1.02);
       }
       div.gallery embed {
         width: 100%;
       }
+      
+
 
       div.desc {      /*Beschreibungstexte für PDF's*/
         padding: 15px;
