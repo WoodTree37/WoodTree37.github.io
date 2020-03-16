@@ -152,8 +152,7 @@ body {
         text-decoration: none;
     }
     a.Button:hover {  /*Change the color of the Buttons on hover*/
-      background-color: rgb(0, 240, 0); 
-      transform: scale(0.9);   
+      background-color: rgb(0, 240, 0);    
       z-index: -1;  
     }
 
