@@ -185,7 +185,7 @@ body {
       div.gallery img {
       width: 100%;
         image-orientation: -180deg;
-        transform: scale(1.02);
+        
       }
       div.gallery embed {
         width: 100%;
