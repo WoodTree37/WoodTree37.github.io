@@ -93,7 +93,7 @@ body {
         outline: none;
         background-color: inherit;
         padding-left: 50%;
-        transform: scale(1.05);
+        
       }
 
       .dropdown-content { 
