@@ -65,7 +65,9 @@ function setCookie(cname, cvalue, exdays) {
     var expires = "expires="+ d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
   }
-
+  
+//Not jet in use
+/*
   function getCookie(cname) {
     var name = cname + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
@@ -81,7 +83,7 @@ function setCookie(cname, cvalue, exdays) {
     }
     return "";
   }
-
+*/
   function checkCookie() {
     var username = getCookie("username");
     if (username != "") {
