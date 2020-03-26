@@ -47,8 +47,8 @@
 
 // PAM Matura
 function PAMMAHelp() {
-    if (window.confirm("Will you contribute to this site?")) {    
-      window.alert("Thank you!");
+    if (window.confirm("This Site can only run if it is supported by the people. \n Will you contribute to this site?")) {    
+      window.alert("Thank you!\n\n You can use the Contribute Button to send you Summarys");
     } else {
       PAMMAHelp();
     }   
