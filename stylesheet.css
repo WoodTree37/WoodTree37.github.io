@@ -225,10 +225,10 @@ body {
  /*Sliders  ______________________________________________________________________________________________________________-*/         
 /* The switch - the box around the slider */
 .switch {
-  position: absolute;
-  top:10px;
+  position:relative;
+  top:5px;
   right:10px;
-  display: inline-block;
+  z-index: 11;
   width: 60px;
   height: 34px;
 }
@@ -242,6 +242,7 @@ body {
 
 /* The slider */
 .slider {
+  z-index:10;
   position: absolute;
   cursor: pointer;
   top: 0;
