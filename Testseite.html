@@ -21,22 +21,28 @@
     </header>
 
         <!--Navigation menue-->
- <nav>
-    <div id="navsmall" class="navbar">
-        <button class="dropbtn" onclick="Drop()"><i class="fas fa-bars"></i></button>
-             <div class="dropdown-content" id="myDropdown">
+        <nav>
+            <div id="navsmall" class="navbar">
+                <button class="dropbtn" onclick="Drop()"><i class="fas fa-bars"></i></button>
+                     <div class="dropdown-content" id="myDropdown">
+                        <a  href="index.html" >  Home</a>        
+                        <a  href="Contribution.html" >  Help</a>  
+                        <a  href="Testseite.html" > Testseite</a> 
+                    </div>
+            </div> 
+            <!--Both menus are drawn and the unnescessary one ist then removed. This only work when loaded with a server!!-->
+            <div id="navbig" class="navbig" >
                 <a  href="index.html" >  Home</a>        
                 <a  href="Contribution.html" >  Help</a>  
                 <a  href="Testseite.html" > Testseite</a> 
-            </div>
-    </div> 
+            </div> 
+        </nav>
     
-    <div id="navbig" class="navbig" >
-        <a  href="index.html" >  Home</a>        
-        <a  href="Contribution.html" >  Help</a>  
-        <a  href="Testseite.html" > Testseite</a> 
-    </div> 
-</nav>
+        <script>
+            Size() // Call listener function at run time. This ensures correct adaptation to variating screen sizes. Only with a server!!
+            window.addEventListener("resize", Size);
+            window.addEventListener("load", Size);  
+        </script>
 
     <main>
         <h3>Things to be added:</h3>
@@ -59,7 +65,9 @@
             <li>Add form to submit content. (Help)</li>
             <li>Add more Content</li> 
             <li>Better favicon! AND suitable for all devices.</li>
-            <li>Add filters with Javascript</li>
+            <li><strong>Add filters with Javascript</strong></li>
+            <li><strong>Personifizieren</strong> </li>
+            <li><strong>Add Google forms for feedback</strong></li>
             <li>Shorten loadingtimes</li>           
             <ol>
                 <li>Add Thumbnails instead of the whole PDF.</li>

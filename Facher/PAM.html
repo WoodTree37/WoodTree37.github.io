@@ -30,18 +30,24 @@
     <div id="navsmall" class="navbar">
         <button class="dropbtn" onclick="Drop()"><i class="fas fa-bars"></i></button>
              <div class="dropdown-content" id="myDropdown">
-                <a  href="../index.html" >  Home</a>        
-                <a  href="../Contribution.html" >  Help</a>  
-                <a  href="../Testseite.html" > Testseite</a> 
+                <a  href="index.html" >  Home</a>        
+                <a  href="Contribution.html" >  Help</a>  
+                <a  href="Testseite.html" > Testseite</a> 
             </div>
     </div> 
-    
+    <!--Both menus are drawn and the unnescessary one ist then removed. This only work when loaded with a server!!-->
     <div id="navbig" class="navbig" >
-        <a  href="../index.html" >  Home</a>        
-        <a  href="../Contribution.html" >  Help</a>  
-        <a  href="../Testseite.html" > Testseite</a>           
+        <a  href="index.html" >  Home</a>        
+        <a  href="Contribution.html" >  Help</a>  
+        <a  href="Testseite.html" > Testseite</a> 
     </div> 
 </nav>
+
+<script>
+    Size()
+    window.addEventListener("resize", Size);
+    window.addEventListener("load", Size);  
+</script>
 
 <!--Diese Seite umfasst "nur" eine Liste zu allen Downloadbaren Files, da zu jeder Prüfung mehere Versionen vorhanden sind.-->
 <main>
@@ -87,12 +93,6 @@
         <h3>Statistik <a class="download" href="../Facher/Bilder/PAM/Statistik/StatistikZ.zip" download target=_blank>Download</a> </h3> 
     
 </main>
-
-<script>
-    Size() // Call listener function at run time
-    window.addEventListener("resize", Size);
-    window.addEventListener("load", Size);  //required?
-</script>
 
 </body>
 

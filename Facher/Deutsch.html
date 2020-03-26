@@ -14,11 +14,6 @@
     <script src="https://kit.fontawesome.com/047f4e48cc.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="scripts.js"></script>
-    <script>
-      $(function(){
-        $("#nav-placeholder").load("../nav.html");
-      });
-      </script>  
   
 </head>
 
@@ -28,29 +23,30 @@
 </header>
 
 <!--NavBar-->
-<nav>
-  <div id="navsmall" class="navbar">
-      <button class="dropbtn" onclick="Drop()"><i class="fas fa-bars"></i></button>
-           <div class="dropdown-content" id="myDropdown">
-              <a  href="../index.html" >  Home</a>        
-              <a  href="../Contribution.html" >  Help</a>  
-              <a  href="../Testseite.html" > Testseite</a> 
-          </div>
-  </div> 
-  
-  <div id="navbig" class="navbig" >
-      <a  href="../index.html" >  Home</a>        
-      <a  href="../Contribution.html" >  Help</a>  
-      <a  href="../Testseite.html" > Testseite</a>           
-  </div> 
 
   
-<script>
-  Size() // Call listener function at run time
-  window.addEventListener("resize", Size);
-  window.addEventListener("load", Size);  //required?
-</script>
-</nav>
+<nav>
+        <div id="navsmall" class="navbar">
+            <button class="dropbtn" onclick="Drop()"><i class="fas fa-bars"></i></button>
+                 <div class="dropdown-content" id="myDropdown">
+                    <a  href="index.html" >  Home</a>        
+                    <a  href="Contribution.html" >  Help</a>  
+                    <a  href="Testseite.html" > Testseite</a> 
+                </div>
+        </div> 
+        <!--Both menus are drawn and the unnescessary one ist then removed. This only work when loaded with a server!!-->
+        <div id="navbig" class="navbig" >
+            <a  href="index.html" >  Home</a>        
+            <a  href="Contribution.html" >  Help</a>  
+            <a  href="Testseite.html" > Testseite</a> 
+        </div> 
+    </nav>
+
+    <script>
+        Size() // Call listener function at run time. This ensures correct adaptation to variating screen sizes. Only with a server!!
+        window.addEventListener("resize", Size);
+        window.addEventListener("load", Size);  
+    </script>
 
 
 <main>
