@@ -47,7 +47,7 @@
 
 // PAM Matura
 function PAMMAHelp() {
-    if (confirm("Will you contribute to this site?")) {    
+    if (window.confirm("Will you contribute to this site?")) {    
       window.alert("Thank you!");
     } else {
       PAMMAHelp();
@@ -85,7 +85,7 @@ function setCookie(cname, cvalue, exdays) {
   function checkCookie() {
     var username = getCookie("username");
     if (username != "") {
-     alert("Welcome again " + username);
+     alert("Welcome back " + username);
     } else {
       username = prompt("Please enter your name:", "");
       if (username != "" && username != null) {
