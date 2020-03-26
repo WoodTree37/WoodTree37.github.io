@@ -47,13 +47,11 @@
 
 // PAM Matura
 function PAMMAHelp() {
-    var txt;
-    if (confirm("Press a button!")) {
-      txt = "You pressed OK!";
+    if (confirm("Will you contribute to this site?")) {    
+      window.alert("Thank you!");
     } else {
-      txt = "You pressed Cancel!";
-    }
-    document.getElementById("demo").innerHTML = txt;
+      PAMMAHelp();
+    }   
   }
 
 
