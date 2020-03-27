@@ -55,6 +55,14 @@ function PAMMAHelp() {
   }
 
 
+              function Darkmode() {
+                 var element = document.body;  
+                 var li = document.getElementById("1");               
+                 element.classList.toggle("dark-mode");                                 
+                 li.classList.toggle("Butn-dark");                                      
+              }
+                 
+
 
 //Cookies
 /*////////////////////////////////////////////////////////////////////////////////////////*/

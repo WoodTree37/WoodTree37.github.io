@@ -20,7 +20,7 @@
 <body class="Home" >  
 
     <header>
-        <div class="Titel"> <h1>Welcome to the Website of N.T.</h1>  </div>  
+        <div class="Titel" id="Titel"> <h1>Welcome to the Website of N.T.</h1>  </div>  
     </header>
 
         <!--Navigation menue-->
@@ -41,6 +41,9 @@
         </div> 
     </nav>
 
+    <button onclick="Darkmode()">Toggle dark mode</button> <!--Für Testzwecke-->
+         
+
     <script>
         Size() // Call listener function at run time. This ensures correct adaptation to variating screen sizes. Only with a server!!
         window.addEventListener("resize", Size);
@@ -59,11 +62,11 @@
                 <br>           
         </section>
 
-        <section>  <!--Dies ist der Erste Abschnit mit den Buttons zu den Grundlagenfächern.-->
+        <section >  <!--Dies ist der Erste Abschnit mit den Buttons zu den Grundlagenfächern.-->
             <div class="Button">          
-                <a class="Button"  href="Facher/Biologie.html">Biologie</a>
-                <a class="Button"  href="Facher/Deutsch.html">Deutsch</a>
-                <a class="Button"  href="Facher/Geografie.html">Geografie</a>           
+                <a class="Button" id="1" href="Facher/Biologie.html">Biologie</a>
+                <a class="Button" id="1" href="Facher/Deutsch.html">Deutsch</a>
+                <a class="Button" id="1" href="Facher/Geografie.html">Geografie</a>           
                 <a class="Button"  href="Facher/Englisch.html">Englisch</a>
                 <a class="Button"  href="Facher/Physik.html">Physik</a>            
                 <a class="Button"  href="Facher/Geschichte.html">Geschichte</a>
