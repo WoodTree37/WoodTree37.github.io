@@ -95,3 +95,15 @@ function setCookie(cname, cvalue, exdays) {
       }
     }
   }
+
+  //Filter
+  /*_________________________________________________________________________________--*/
+
+  function funfKL() {
+    var x = document.getElementById("funefKL");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }

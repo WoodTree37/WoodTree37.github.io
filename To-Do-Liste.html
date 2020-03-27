@@ -17,17 +17,20 @@
 
 <body class="Home">
     <header>
-        <div class="Titel"> <h1>Welcome to the Website of N.T.</h1>  </div>  
-        
-        <label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-        </label>
+        <div class="Titel"> <h1 class="Titel">Welcome to the Website of N.T.</h1>  </div> 
+
+        <span class="Slidr">
+            <label class="switch">
+                <input type="checkbox"  onclick="funfKL()" checked>
+                <span class="slider round"></span>
+            </label>
+        </span>
 
     </header>
 
         <!--Navigation menue-->
-        <nav>
+        <nav >
+            <div id="fuenfKL">
             <div id="navsmall" class="navbar">
                 <button class="dropbtn" onclick="Drop()"><i class="fas fa-bars"></i></button>
                      <div class="dropdown-content" id="myDropdown">
@@ -43,6 +46,17 @@
                 <a  href="To-Do-List.html" > To-Do-List</a> 
             </div> 
 
+        </div>
+<script>
+        function funfKL() {
+            var x = document.getElementById("funefKL");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+</script>
             
         
     
@@ -62,7 +76,7 @@
             <li>Make navigation menue formobile acessible through one button.<i class="fas fa-thumbs-up"></i></li>
             <li>Fix widths of elements in Deutsch. <i class="fas fa-thumbs-up"></i></li> 
             <li>Improve/Add 404 page <i class="fas fa-thumbs-up"></i></li>
-            <li>Add Google forms for feedback <strong>vielleicht sogar noch mit iframe</strong> <i class="fas fa-thumbs-up"></li>
+            <li>Add Google forms for feedback <i class="fas fa-thumbs-up"></i></li>
             <li>Improve Mobile compability - Sort of done</li>
             <li>Personalization - Sort of done</li>
             <br>
@@ -77,7 +91,8 @@
             <li>Add more Content</li> 
             <li>Better favicon! AND suitable for all devices.</li>
             <li><strong>Add filters with Javascript</strong></li>     
-            <li><strong>farbverläufe auf der seite</strong></li>        
+            <li><strong>farbverläufe auf der seite</strong></li>    
+            <li><strong>Dark Mode?</strong></li>     
             
             <li>Ev. Breadcrub navigation</li>
             <li>Shorten loadingtimes</li>           
