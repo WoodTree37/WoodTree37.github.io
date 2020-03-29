@@ -1,65 +1,58 @@
 <!DOCTYPE html>
 <html>
-        <head>
-                <title>Secret N.T.</title>
-                <meta charset="utf-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <meta name="author" content="Nick Truttmann">
-                <meta name="description" content="Totally secret part of N.T's Website :)">  
-                <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-                <link rel="icon" href="faviconS.ico" type="image/x-icon">
-            
-                <link rel="stylesheet" type="text/css" href="stylesheet.css">
-                <script src="https://kit.fontawesome.com/047f4e48cc.js" crossorigin="anonymous"></script>
-                <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-                <script src="scripts.js"></script>  
-            </head>
-<body>   
-<aside style="display: none;">
+<head>
+        <title>Hidden Game section</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Nick Truttmann">
+        <meta name="description" content="Dies ist ein geheimes Easteregg, ein Spiel programiert von Nick Truttmann.">  
+        <link rel="shortcut icon" href="faviconS.ico" type="image/x-icon">
+        <link rel="icon" href="faviconS.ico" type="image/x-icon">
 
-                <h2>Reviewed Philosophers:</h2>
-                <ul>
-                <li>
-                        <a href="#targetKant">Kant</a>
-                </li> 
-                        
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <script src="https://kit.fontawesome.com/047f4e48cc.js" crossorigin="anonymous"></script>
+        <script src="scripts.js"></script>
 
-                <li> 
-                        <a href="#TargetSchopenhauer">Schopenhauer</a>
-                </li>
-                        
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="WebGl/TemplateData/style.css">
+    <script src="WebGl/TemplateData/UnityProgress.js"></script>  
+    <script src="WebGl/Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "WebGl/Build/WebGl.json", {onProgress: UnityProgress});
+    </script>
+</head>
+
+<body class="Home">
+                <header>
+                        <div class="Titel"> <h1>Welcome to the Website of N.T.</h1>  </div>  
+               </header>
                 
-                <li>
-                        <a href="#TargetSokrates">Sokrates</a>
-                </li>
-                        
-                </ul>
+                        <!--Navigation menue-->
+                    <nav>
+                        <div id="navsmall" class="navbar">
+                            <button class="dropbtn" onclick="Drop()"><i class="fas fa-bars"></i></button>
+                                 <div class="dropdown-content" id="myDropdown">
+                                    <a  href="index.html" >  Home</a>        
+                                    <a  href="Contribution.html" >  Contribute</a>  
+                                    <a  href="To-Do-Liste.html" > To-Do-Liste</a> 
+                                </div>
+                        </div> 
+                        <!--Both menus are drawn and the unnescessary one ist then removed. This only work when loaded with a server!!-->
+                        <div id="navbig" class="navbig" >
+                            <a  href="index.html" >  Home</a>        
+                            <a  href="Contribution.html" >  Contribute</a>  
+                            <a  href="To-Do-Liste.html" > To-Do-Liste</a> 
+                            
+                        </div> 
+                    </nav>
 
-                </aside>
-
-<h2>How are Philosophers critiqued and reviewed?</h2>
-
-<p> 
-    Arthur Schopenhauers philosophy is best described by his own facial expression. 
-    He mastered the art of hating everything, which led to the accumulation of something like a "thunderstorm" around his head. 
-    This "cloud of anger" is often falsely claimed to be his hair. 
-    Whereas every other philosopher agreed, that one has to accept the opinion that is supported by arguments the best, Schopenhauer said, Quote: "Fuck y'all wimps",
-    and continued by arguing, that only winning the argument is truly important. 
-    This of course led to every other philosopher calling him a Quote: "twat", 
-    but he made a lot of friends with the common peasant, as these people really only use philosophy for their own good.
-    
-</p>
-
-<P>
-The Screenreader only happends to work if you have at least a three item page-intern Navbar. Dont ask me why. I dont need it. 
-
-</P>
-
-<P><strong>
- The content on this page is stolen from masterjopro for testing Purposes of Screenreadercompability. Visit <a href="https://masterjopro.github.io/" >masterjopro's Website</a>      
-</strong>
-</P>
-
-
-</body>
+                <!--This is the hidden game, referencing the WebGl folder.-->
+                    <div class="webgl-content">
+                        <div id="gameContainer" style="width: 960px; height: 600px"></div>
+                        <div class="footer">
+                          <div class="webgl-logo"></div>
+                          <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+                          <div class="title">Thats_cube!</div>
+                        </div>
+                      </div>
+         </body>
 </html>

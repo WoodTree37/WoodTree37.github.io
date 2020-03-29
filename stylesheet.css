@@ -39,6 +39,7 @@ body {
       padding: 8px 0px;
       margin-bottom: 4px;
       }
+      
 .Titel-dark {
   background-color:rgb(4, 70, 4);
   color: whitesmoke;
@@ -162,14 +163,12 @@ body {
         min-width: 250px;       
         border-radius: 5px;      
         background-color: lightgreen;
+      
         text-decoration: none;
         color:black;
     }
 
-    .Butn-dark {
-      background-color: rgb(4, 70, 4);
-      color: white;
-    }
+    
 
     a.Button:hover {  /*Change the color of the Buttons on hover*/
       background-color: rgb(0, 240, 0);    

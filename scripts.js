@@ -57,9 +57,10 @@ function PAMMAHelp() {
 
               function Darkmode() {
                  var element = document.body;  
-                 var li = document.getElementById("1");               
-                 element.classList.toggle("dark-mode");                                 
-                 li.classList.toggle("Butn-dark");                                      
+                 var li = document.querySelector('Titel')           
+                 element.classList.toggle("dark-mode");                                
+                 li.classList.toggle("Titel-dark");  
+                                                        
               }
                  
 
