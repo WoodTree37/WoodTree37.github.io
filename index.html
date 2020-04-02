@@ -20,42 +20,35 @@
 <body class="Home" >  
 
     <header>
-        <div class="Titel"> <h1>Welcome to the Website of N.T.</h1>  </div>  
+        <div class="Titel" > <h1>Welcome to the Website of N.T.</h1>  </div>  
     </header>
 
      <!--Navigation menue-->
      <nav>    
-        <div id="navsmall" class="navbar">
+        <div id="dark" class="navbar">
             <button class="dropbtn" onclick="Drop()"><i class="fas fa-bars"></i></button>
                  <div class="dropdown-content" id="myDropdown">
-                    <a class="nav" href="index.html" >  Home</a>        
-                    <a class="nav" href="Contribution.html" >  Contribute</a>  
-                    <a class="nav" href="To-Do-Liste.html" > To-Do-List</a> 
+                    <a class="nav" id="dark" href="index.html" >  Home</a>        
+                    <a class="nav" id="dark" href="Contribution.html" >  Contribute</a>  
+                    <a class="nav" id="dark" href="To-Do-Liste.html" > To-Do-List</a> 
                 </div>
         </div> 
         <!--Both menus are drawn and the unnescessary one ist then removed. This only work when loaded with a server!!-->
-        <div id="navbig" class="navbig" >
-            <a  class="nav" href="index.html" >  Home</a>        
-            <a  class="nav" href="Contribution.html" >  Contribute</a>  
-            <a  class="nav" href="To-Do-Liste.html" > To-Do-List</a> 
+        <div id="dark" class="navbig" >
+            <a  class="nav" id="dark" href="index.html" >  Home</a>        
+            <a  class="nav" id="dark" href="Contribution.html" >  Contribute</a>  
+            <a  class="nav" id="dark" href="To-Do-Liste.html" > To-Do-List</a> 
         </div> 
     </nav>
 
-    <div class="Darkmode"> 
+    <div class="Darkmode" id="dark"> 
         <span>Darkmode: 
             <label class="switchD">
-                <input type="checkbox"  onclick="Darkmode()" checked>
+                <input type="checkbox"  onclick="checkCookieDark()" onclick="Darkmode()">
                 <span class="slider round"></span>
             </label>
         </span>            
     </div> 
-         
-
-    <script>
-        Size() // Call listener function at run time. This ensures correct adaptation to variating screen sizes. Only with a server!!
-        window.addEventListener("resize", Size);
-        window.addEventListener("load", Size);  
-    </script>
         
     <main>
         <section>          
@@ -73,18 +66,18 @@
 
         <section>  <!--Dies ist der Erste Abschnit mit den Buttons zu den Grundlagenfächern.-->
             <div class="Button">          
-                <a class="Button"  href="Facher/Biologie.html">Biologie</a>
-                <a class="Button"  href="Facher/Deutsch.html">Deutsch</a>
-                <a class="Button"  href="Facher/Geografie.html">Geografie</a>           
-                <a class="Button"  href="Facher/Englisch.html">Englisch</a>
-                <a class="Button"  href="Facher/Physik.html">Physik</a>            
-                <a class="Button"  href="Facher/Geschichte.html">Geschichte</a>
-                <a class="Button"  href="Facher/Matura.html">Matura</a>  
-                <a class="Button"  href="Facher/Philosophie.html">Philosophie</a>  
-                <a class="Button"  href="Facher/Chemie.html">Chemie</a>
-                <a class="Button"  href="Facher/MMathematik.html">Mathematik</a>  
-                <a class="Button"  href="Facher/Franz.html">Französisch</a> 
-                <a class="Button"  href="Facher/TestFach.html">Testfach</a>      
+                <a class="Button" id="dark" href="Facher/Biologie.html">Biologie</a>
+                <a class="Button" id="dark" href="Facher/Deutsch.html">Deutsch</a>
+                <a class="Button" id="dark" href="Facher/Geografie.html">Geografie</a>           
+                <a class="Button" id="dark" href="Facher/Englisch.html">Englisch</a>
+                <a class="Button" id="dark" href="Facher/Physik.html">Physik</a>            
+                <a class="Button" id="dark" href="Facher/Geschichte.html">Geschichte</a>
+                <a class="Button" id="dark" href="Facher/Matura.html">Matura</a>  
+                <a class="Button" id="dark" href="Facher/Philosophie.html">Philosophie</a>  
+                <a class="Button" id="dark" href="Facher/Chemie.html">Chemie</a>
+                <a class="Button" id="dark" href="Facher/MMathematik.html">Mathematik</a>  
+                <a class="Button" id="dark" href="Facher/Franz.html">Französisch</a> 
+                <a class="Button" id="dark" href="Facher/TestFach.html">Testfach</a>      
             
                 <a style="display: none;" class="Button"  href="Facher/Testfach.html">Testfach</a> <!--Diese Buttons sind bereits als reserve für die ZUkunft.-->          
                 <a style="display: none;" class="Button"  href="Facher/Testfach.html">Testfach</a> <!--Sie beeinflussen die Flexbox nicht.-->     
@@ -96,9 +89,9 @@
         <section>  <!--Hier sind die Buttons zu den SPF's.-->
             <h5>SPF/EF</h5>
                 <div class="Button">
-                    <a class="Button"  href="Facher/PAM.html">PAM</a>
-                    <a class="Button"  href="Facher/PPP.html">PPP</a>
-                    <a class="Button"  href="Facher/Informatik.html">Informatik</a>
+                    <a class="Button" id="dark" href="Facher/PAM.html">PAM</a>
+                    <a class="Button" id="dark" href="Facher/PPP.html">PPP</a>
+                    <a class="Button" id="dark" href="Facher/Informatik.html">Informatik</a>
                     <br><br><br>
                 </div>
         </section>

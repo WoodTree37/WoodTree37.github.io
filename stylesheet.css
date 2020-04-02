@@ -3,6 +3,10 @@
   font-family: Verdana, Arial, sans-serif;  
 }
 
+.Darktheme {
+  background-color:green;
+  color: rgb(156, 147, 147);
+}
 
         body {
           font-size: 1.1em;
@@ -10,10 +14,12 @@
           color:black;
           }
 
+          /*Darkmode of background*/
           .dark-mode {
             background-color: rgb(16, 8, 94);
             color: rgb(156, 147, 147);
           }
+
   
 .clearfix::after {
   content: "";
@@ -39,7 +45,8 @@
   margin-bottom: 4px;
   color:black;
   }
-      
+    
+  /*Darkmode for title*/
 .Titel-dark {
    background-color:rgb(4, 70, 4);
    color: whitesmoke;
@@ -60,13 +67,6 @@ h1.Titel {
       position: sticky;
       top: 0px;   
       }
-
-    .navbar {
-        display: none;   /*Normally the big navbar is displayed, this is the small one.*/
-    }
-    .navbig  {
-        display: flex;  /*As soons as the small navbar is required, this will be changed(Script)*/
-    }
 
     nav div {           /*Container for flexbox (NavBar) */
       display: flex; 
@@ -93,22 +93,6 @@ h1.Titel {
         cursor: pointer;                      
       }
 
-      .navdark {
-        background-color: green;
-        color:white;
-        flex: 1; 
-        z-index: 10;            
-        text-decoration: none;
-        text-align: center;                
-        border: 2px solid black;       
-        border-radius: 2px;                
-        padding-top: 10px; 
-        height: 50px;
-        margin-right: 1px;
-        margin-bottom: 2px;
-        min-width: 240px;  
-        cursor: pointer;
-      }
 
       nav a:hover, .navbar:hover, .dropdown-content a:hover { /*Change the color of the Buttons on hover*/
         background-color: rgb(0, 240, 0);          
@@ -347,3 +331,23 @@ div.Darkmode {
   vertical-align: middle;
 }
 
+
+
+/*Sizing for the navbar*/
+@media screen and (max-width: 800px) {  
+  .navbar {
+  display: flex; }
+  .navbig {
+  display: none;}
+}
+
+@media screen and (min-width: 800px) {
+  .navbar {
+  display: none; }
+  .navbig {
+  display: flex;}
+}
+
+
+
+           

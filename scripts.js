@@ -16,35 +16,6 @@
         }
      
 
-        
-//Funktion zum Wechsel zwischen den NavBars           
-    function Size() {
-        var x = window.innerWidth
-            
-        if(x<=800){
-            Small();
-        }
-        else {
-            Big();
-        } 
-        window.addEventListener("resize", Size);
-        window.addEventListener("load", Size);  //required?
-    }
-
-            function Small() { 
-                {
-                    document.getElementById("navsmall").style.display = "flex";                 
-                    document.getElementById("navbig").style.display = "none";
-                }
-            } 
-
-            function Big() {
-                {
-                    document.getElementById("navbig").style.display = "flex";
-                    document.getElementById("navsmall").style.display = "none";        
-                }
-            }
-
 // PAM Matura
 function PAMMAHelp() {
     if (window.confirm("This Site can only run if it is supported by the people. \n Will you contribute to this site?")) {    
@@ -57,15 +28,8 @@ function PAMMAHelp() {
 
               function Darkmode() {
                  var body = document.body;
-                 var navsmall = document.querySelector('.navbar');
-
-                 if(document.querySelector('.Darkmode')== null) {
-                  var darkButton = document.querySelectorAll('.DarkButton'); 
-               }
-               else {
-                  var darkButton = document.querySelectorAll('.DarkButton'); 
-               }
-
+                 body.classList.toggle("dark-mode");
+ 
                  if(document.querySelector('.Titel')== null) {
                     var element = document.querySelector('.Titel-dark'); 
                  }
@@ -73,11 +37,14 @@ function PAMMAHelp() {
                     var element = document.querySelector('.Titel'); 
                  }
                  
-                 body.classList.toggle("dark-mode");  
-                 navsmall.classList.toggle("navdark");
-             /*    darkButton.classList.toggle("DarkMode")*/
                  element.classList.toggle("Titel");                               
-                 element.classList.toggle("Titel-dark");                                                         
+                 element.classList.toggle("Titel-dark");    
+                 var dark = document.querySelectorAll("#dark"); 
+                 var leng = dark.length;
+                    for(var i=0; i < leng; i++) 
+                    {
+                    dark[i].classList.toggle("Darktheme");   
+                    }
               }
                  
 
@@ -112,8 +79,9 @@ function setCookie(cname, cvalue, exdays) {
 
   function checkCookie() {
     var username = getCookie("username");
-    if (username != "") {
-    } else {
+    if (username != "") 
+    {} 
+    else {
       username = prompt("Please enter your name:", "");
       if (username != "" && username != null) {
         setCookie("username", username, 365);
@@ -131,11 +99,21 @@ function setCookie(cname, cvalue, exdays) {
     } else {
       x.style.display = "none";
     }
-
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    var expires = "expires="+ d.toUTCString();
-    document.cookie = darkmode + expires+  ";path=/";
-    
   }
+
+  function checkCookieDark() {
+    var dark = getCookie("darkmode");
+    if (dark == "") 
+    {     
+        setCookie("darkmode", on, 365);
+    } 
+    else if (dark == "on") {
+      setCookie("darkmode", on, 365);
+      }
+      else {
+        setCookie("darkmode", off, 365);
+        }
+    }
+  
+    
 
