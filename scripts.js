@@ -27,7 +27,7 @@ function PAMMAHelp() {
 
 
               function Darkmode() {
-                checkCookieDark();
+                                      
                  var body = document.body;
                  body.classList.toggle("dark-mode");
  
@@ -103,18 +103,17 @@ function setCookie(cname, cvalue, exdays) {
     }
   }
 
-  function checkCookieDark() {
+  function changeCookieDark() {
+    Darkmode();
     var dark = getCookie("darkmode");
-    if (dark == "" || null) 
+    if (dark == "" || null || "off") 
     {     
         setCookie("darkmode", "on", 365);
     } 
     if (dark == "on") {
-      setCookie("darkmode", "off", 365);
+      setCookie("darkmode", "off", 365);     
       }
-      if (dark == "off") {
-        setCookie("darkmode", "on", 365);
-        }
+      
     }
   
     
