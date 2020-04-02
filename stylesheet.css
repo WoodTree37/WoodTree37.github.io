@@ -8,6 +8,11 @@
   color: rgb(156, 147, 147);
 }
 
+.Lighttheme {
+  background-color:lightgreen;
+  color: black;
+}
+
         body {
           font-size: 1.1em;
           background-color: lightblue;
@@ -80,9 +85,7 @@ h1.Titel {
         flex: 1; 
         z-index: 10;            
         text-decoration: none;
-        text-align: center; 
-        background-color: lightgreen; 
-        color:black;       
+        text-align: center;       
         border: 2px solid green;       
         border-radius: 2px;                
         padding-top: 10px; 
@@ -162,10 +165,7 @@ h1.Titel {
         margin: 5px;
         min-width: 250px;       
         border-radius: 5px;      
-        background-color: lightgreen;
-      
         text-decoration: none;
-        color:black;
     }
 
     
@@ -324,7 +324,6 @@ div.Darkmode {
   right: 0px;
   bottom: 0px;  
   padding: 3px;
-  background-color: lightgreen;
   border: 2px solid green;
   border-radius: 1px;
   z-index: 10;

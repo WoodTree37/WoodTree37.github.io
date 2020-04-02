@@ -27,6 +27,7 @@ function PAMMAHelp() {
 
 
               function Darkmode() {
+                checkCookieDark();
                  var body = document.body;
                  body.classList.toggle("dark-mode");
  
@@ -43,7 +44,8 @@ function PAMMAHelp() {
                  var leng = dark.length;
                     for(var i=0; i < leng; i++) 
                     {
-                    dark[i].classList.toggle("Darktheme");   
+                    dark[i].classList.toggle("Darktheme");
+                    dark[i].classList.toggle("Lighttheme");     
                     }
               }
                  
@@ -103,15 +105,15 @@ function setCookie(cname, cvalue, exdays) {
 
   function checkCookieDark() {
     var dark = getCookie("darkmode");
-    if (dark == "") 
+    if (dark == "" || null) 
     {     
-        setCookie("darkmode", on, 365);
+        setCookie("darkmode", "on", 365);
     } 
-    else if (dark == "on") {
-      setCookie("darkmode", on, 365);
+    if (dark == "on") {
+      setCookie("darkmode", "off", 365);
       }
-      else {
-        setCookie("darkmode", off, 365);
+      if (dark == "off") {
+        setCookie("darkmode", "on", 365);
         }
     }
   
