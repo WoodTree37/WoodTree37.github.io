@@ -20,32 +20,38 @@
         <div class="Titel"> <h1>Welcome to the Website of N.T.</h1>  </div> 
     </header>
 
-        <!--Navigation menue-->
-        <nav>    
-            <div id="navsmall" class="navbar">
-                <button class="dropbtn" onclick="Drop()"><i class="fas fa-bars"></i></button>
-                     <div class="dropdown-content" id="myDropdown">
-                        <a class="nav" href="index.html" >  Home</a>        
-                        <a class="nav" href="Contribution.html" >  Contribute</a>  
-                        <a class="nav" href="To-Do-Liste.html" > To-Do-List</a> 
-                    </div>
-            </div> 
-            <!--Both menus are drawn and the unnescessary one ist then removed. This only work when loaded with a server!!-->
-            <div id="navbig" class="navbig" >
-                <a  class="nav" href="index.html" >  Home</a>        
-                <a  class="nav" href="Contribution.html" >  Contribute</a>  
-                <a  class="nav" href="To-Do-Liste.html" > To-Do-List</a> 
-            </div> 
-        </nav>
+    <nav>    
+        <div class="navbar">
+            <button class="dropbtn" onclick="Drop()"><i class="fas fa-bars"></i></button>
+                 <div class="dropdown-content" id="myDropdown">
+                    <a class="nav Lighttheme" id="dark" href="index.html" >  Home</a>        
+                    <a class="nav Lighttheme" id="dark" href="Contribution.html" >  Contribute</a>  
+                    <a class="nav Lighttheme" id="dark" href="To-Do-Liste.html" > To-Do-List</a> 
+                </div>
+        </div> 
+        <!--Both menus are drawn and the unnescessary one ist then removed. This only work when loaded with a server!!-->
+        <div class="navbig" >
+            <a  class="nav Lighttheme" id="dark" href="index.html" >  Home</a>        
+            <a  class="nav Lighttheme" id="dark" href="Contribution.html" >  Contribute</a>  
+            <a  class="nav Lighttheme" id="dark" href="To-Do-Liste.html" > To-Do-List</a> 
+        </div> 
+    </nav>
 
-        <div class="Darkmode"> 
-            <span>Darkmode: 
-                <label class="switchD">
-                    <input type="checkbox"  onclick="Darkmode()" checked>
-                    <span class="slider round"></span>
-                </label>
-            </span>            
-        </div>   
+    <div class="Darkmode Lighttheme" id="dark"> 
+        <span>Darkmode: 
+            <label class="switchD">
+                <input type="checkbox" id="darkcheck"  onclick="changeCookieDark()">
+                <span class="slider round"></span>
+            </label>
+        </span>            
+    </div> 
+        <script>
+            var dark = getCookie("darkmode");
+                if(dark == "on")
+                {   Darkmode();  
+                    document.getElementById("darkcheck").checked = true;
+                }
+        </script>
              
     
         <script>
