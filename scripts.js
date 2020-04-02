@@ -91,7 +91,7 @@ function setCookie(cname, cvalue, exdays) {
     }
   }
 
-  //Filter
+  //Filters
   /*_________________________________________________________________________________--*/
 
   function funfKL() {
