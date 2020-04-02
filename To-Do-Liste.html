@@ -38,12 +38,15 @@
             </div> 
         </nav>
 
-        <div class="Darkmode">Darkmode: <label class="switch">
+        <div class="Darkmode"> 
+            <span>Darkmode: 
+                <label class="switchD">
                     <input type="checkbox"  onclick="Darkmode()" checked>
                     <span class="slider round"></span>
-                </label> 
-        </div>                      
-        
+                </label>
+            </span>            
+        </div>   
+             
     
         <script>
             Size() // Call listener function at run time. This ensures correct adaptation to variating screen sizes. Only with a server!!
@@ -78,6 +81,7 @@
             <li><strong>Add filters with Javascript</strong></li>     
             <li><strong>farbverläufe auf der seite</strong></li>    
             <li><strong>Dark Mode? --> Cookie</strong></li>     
+            <li><strong>responsiveness mit @media statt js</strong></li> 
             
             <li>Ev. Breadcrub navigation</li>
             <li>Shorten loadingtimes</li>           

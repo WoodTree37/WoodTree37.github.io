@@ -272,6 +272,15 @@ span.Slidr {
   height: 30px;
 }
 
+.switchD {
+  position: relative;
+  bottom:0px;
+  right:0px;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
 .switch input { 
   opacity: 0;
   width: 0;
@@ -326,14 +335,15 @@ input:checked + .slider:before {
 }
 
 /*Field for Darkmode Button*/
-div.DarkMode {
+div.Darkmode {
   position: fixed;
-  bottom: 5px;
-  right: 5px;
+  right: 0px;
+  bottom: 0px;  
   padding: 3px;
   background-color: lightgreen;
   border: 2px solid green;
   border-radius: 1px;
   z-index: 10;
+  vertical-align: middle;
 }
 

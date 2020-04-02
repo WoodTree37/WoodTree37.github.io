@@ -41,9 +41,14 @@
         </div> 
     </nav>
 
-    <div class="DarkMode">      
-        <div>Darkmode: <button  onclick="Darkmode()">X</button> </div>
-    </div>
+    <div class="Darkmode"> 
+        <span>Darkmode: 
+            <label class="switchD">
+                <input type="checkbox"  onclick="Darkmode()" checked>
+                <span class="slider round"></span>
+            </label>
+        </span>            
+    </div> 
          
 
     <script>
@@ -59,7 +64,7 @@
                     <script>
                     checkCookie()
                     var username = getCookie("username");
-                    document.write("Welcome back" + username);
+                    document.write("Welcome back " + username);
                     </script> 
                     
                     </h2>           
