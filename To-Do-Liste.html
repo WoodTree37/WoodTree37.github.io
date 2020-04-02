@@ -38,11 +38,11 @@
             </div> 
         </nav>
 
-        <div class="Darkmode">      
-                <div>Darkmode: <button class="DarkButton" onclick="Darkmode()">X</button> </div>
-        </div>          
-
-            
+        <div class="Darkmode">Darkmode: <label class="switch">
+                    <input type="checkbox"  onclick="Darkmode()" checked>
+                    <span class="slider round"></span>
+                </label> 
+        </div>                      
         
     
         <script>
@@ -89,8 +89,8 @@
         </ul>
 
     </main>
-
-    <!--Check for Darkmode cookie-->
+<!--
+    
     <script>
         function checkDarkmodeCookie() {
             var Darkmode = getCookie("darkmode");
@@ -128,7 +128,7 @@
                 }
         </script>
 
-
+-->
 
 
 </body>

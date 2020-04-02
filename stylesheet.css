@@ -326,7 +326,7 @@ input:checked + .slider:before {
 }
 
 /*Field for Darkmode Button*/
-.DarkMode {
+div.DarkMode {
   position: fixed;
   bottom: 5px;
   right: 5px;
