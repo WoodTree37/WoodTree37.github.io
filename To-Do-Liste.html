@@ -16,49 +16,32 @@
     </head>
 
 <body class="Home">
-    <header>
-        <div class="Titel"> <h1 class="Titel">Welcome to the Website of N.T.</h1>  </div> 
-
-        <span class="Slidr">
-            <label class="switch">
-                <input type="checkbox"  onclick="funfKL()" checked>
-                <span class="slider round"></span>
-            </label>
-        </span>
-
+    <header >
+        <div class="Titel"> <h1>Welcome to the Website of N.T.</h1>  </div> 
     </header>
 
         <!--Navigation menue-->
-        <nav >
-            <div id="fuenfKL">
+        <nav>    
             <div id="navsmall" class="navbar">
                 <button class="dropbtn" onclick="Drop()"><i class="fas fa-bars"></i></button>
                      <div class="dropdown-content" id="myDropdown">
-                        <a  href="index.html" >  Home</a>        
-                        <a  href="Contribution.html" >  Contribute</a>  
-                        <a  href="To-Do-List.html" > To-Do-List</a> 
+                        <a class="nav" href="index.html" >  Home</a>        
+                        <a class="nav" href="Contribution.html" >  Contribute</a>  
+                        <a class="nav" href="To-Do-Liste.html" > To-Do-List</a> 
                     </div>
             </div> 
             <!--Both menus are drawn and the unnescessary one ist then removed. This only work when loaded with a server!!-->
             <div id="navbig" class="navbig" >
-                <a  href="index.html" >  Home</a>        
-                <a  href="Contribution.html" >  Contribute</a>  
-                <a  href="To-Do-List.html" > To-Do-List</a> 
+                <a  class="nav" href="index.html" >  Home</a>        
+                <a  class="nav" href="Contribution.html" >  Contribute</a>  
+                <a  class="nav" href="To-Do-Liste.html" > To-Do-List</a> 
             </div> 
+        </nav>
 
-        </div>
-        <button onclick="Darkmode()">Toggle dark mode</button> <!--Für Testzwecke-->
-                    
-<script>
-        function funfKL() {
-            var x = document.getElementById("funefKL");
-            if (x.style.display === "none") {
-              x.style.display = "block";
-            } else {
-              x.style.display = "none";
-            }
-          }
-</script>
+        <div class="Darkmode">      
+                <div>Darkmode: <button class="DarkButton" onclick="Darkmode()">X</button> </div>
+        </div>          
+
             
         
     
@@ -106,6 +89,47 @@
         </ul>
 
     </main>
+
+    <!--Check for Darkmode cookie-->
+    <script>
+        function checkDarkmodeCookie() {
+            var Darkmode = getCookie("darkmode");
+            if (Darkmode == "true") {
+                Darkmode();
+            }          
+        }
+    </script>
+
+    <span class="Slidr">
+        <label class="switch">
+            <input type="checkbox"  onclick="funfKL()" checked>
+            <span class="slider round"></span>
+        </label>
+    </span>
+
+    <script>
+        function funfKL() {
+            var x = document.getElementById("funefKL");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+           
+    
+          }
+</script>
+        <script>
+                function setDarkmodeCookie () {
+                    var d = new Date();
+                    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+                    var expires = "expires="+ d.toUTCString();
+                    document.cookie = darkmode + expires+  ";path=/";
+                }
+        </script>
+
+
+
 
 </body>
 

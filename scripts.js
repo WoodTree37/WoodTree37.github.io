@@ -56,11 +56,28 @@ function PAMMAHelp() {
 
 
               function Darkmode() {
-                 var element = document.body;  
-                 var li = document.querySelector('Titel')           
-                 element.classList.toggle("dark-mode");                                
-                 li.classList.toggle("Titel-dark");  
-                                                        
+                 var body = document.body;
+                 var navsmall = document.querySelector('.navbar');
+
+                 if(document.querySelector('.Darkmode')== null) {
+                  var darkButton = document.querySelectorAll('.DarkButton'); 
+               }
+               else {
+                  var darkButton = document.querySelectorAll('.DarkButton'); 
+               }
+
+                 if(document.querySelector('.Titel')== null) {
+                    var element = document.querySelector('.Titel-dark'); 
+                 }
+                 else {
+                    var element = document.querySelector('.Titel'); 
+                 }
+                 
+                 body.classList.toggle("dark-mode");  
+                 navsmall.classList.toggle("navdark");
+             /*    darkButton.classList.toggle("DarkMode")*/
+                 element.classList.toggle("Titel");                               
+                 element.classList.toggle("Titel-dark");                                                         
               }
                  
 
@@ -76,7 +93,7 @@ function setCookie(cname, cvalue, exdays) {
   }
   
 //Not jet in use
-/*
+
   function getCookie(cname) {
     var name = cname + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
@@ -92,11 +109,10 @@ function setCookie(cname, cvalue, exdays) {
     }
     return "";
   }
-*/
+
   function checkCookie() {
     var username = getCookie("username");
     if (username != "") {
-     alert("Welcome back " + username);
     } else {
       username = prompt("Please enter your name:", "");
       if (username != "" && username != null) {
@@ -115,4 +131,11 @@ function setCookie(cname, cvalue, exdays) {
     } else {
       x.style.display = "none";
     }
+
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = darkmode + expires+  ";path=/";
+    
   }
+
