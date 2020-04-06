@@ -1,9 +1,8 @@
 
-        /* When the user clicks on the button, 
-        toggle between hiding and showing the dropdown content */
-        function Drop() {
-          document.getElementById("myDropdown").classList.toggle("show");
-        }
+/* Navigation Menu when small*/
+  function Drop() {
+  document.getElementById("myDropdown").classList.toggle("show");
+ }
         
         // Close the dropdown if the user clicks outside of it
             window.onclick = function(e) {
@@ -20,10 +19,11 @@
 function PAMMAHelp() {
     if (window.confirm("This Site can only run if it is supported by the people. \n Will you contribute to this site?")) {    
       window.alert("Thank you!\n\n You can use the Contribute Button to send you Summarys");
-    } else {
+    } 
+    else {
       PAMMAHelp();
     }   
-  }
+}
 
 
               function Darkmode() {
@@ -60,24 +60,36 @@ function setCookie(cname, cvalue, exdays) {
     var expires = "expires="+ d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
   }
-  
-//Not jet in use
 
-  function getCookie(cname) {
+  function changeCookieDark() {
+    Darkmode();
+    var dark = getCookie("darkmode");
+    if (dark == "" || null || "off") 
+    {     
+        setCookie("darkmode", "on", 365);
+    } 
+    if (dark == "on") {
+      setCookie("darkmode", "off", 365);     
+      }   
+    }
+  
+//Getting a specific cookie
+
+function getCookie(cname) {
     var name = cname + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
     var ca = decodedCookie.split(';');
-    for(var i = 0; i <ca.length; i++) {
-      var c = ca[i];
-      while (c.charAt(0) == ' ') {
-        c = c.substring(1);
+      for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
       }
-      if (c.indexOf(name) == 0) {
-        return c.substring(name.length, c.length);
-      }
-    }
     return "";
-  }
+}
 
   function checkCookie() {
     var username = getCookie("username");
@@ -95,7 +107,7 @@ function setCookie(cname, cvalue, exdays) {
   /*_________________________________________________________________________________--*/
 
   function funfKL() {
-    var x = document.getElementById("funefKL");
+    var x = document.querySelectorAll("#funefKL");
     if (x.style.display === "none") {
       x.style.display = "block";
     } else {
@@ -103,18 +115,7 @@ function setCookie(cname, cvalue, exdays) {
     }
   }
 
-  function changeCookieDark() {
-    Darkmode();
-    var dark = getCookie("darkmode");
-    if (dark == "" || null || "off") 
-    {     
-        setCookie("darkmode", "on", 365);
-    } 
-    if (dark == "on") {
-      setCookie("darkmode", "off", 365);     
-      }
-      
-    }
+  
   
     
 
