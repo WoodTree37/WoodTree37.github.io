@@ -30,36 +30,20 @@
                  <div class="dropdown-content" id="myDropdown">
                     <a class="nav Lighttheme" id="dark" href="index.html" >  Home</a>        
                     <a class="nav Lighttheme" id="dark" href="Contribution.html" >  Contribute</a>  
-                    <a class="nav Lighttheme" id="dark" href="To-Do-Liste.html" > To-Do-List</a> 
-                </div>
+                    <a class="nav Lighttheme" id="dark" href="To-Do-Liste.html"> To-Do-List</a> 
+                </div>              
         </div> 
+        
         <!--This only work when loaded with a server!!-->
         <div class="navbig" >
             <a  class="nav Lighttheme" id="dark" href="index.html" >  Home</a>        
             <a  class="nav Lighttheme" id="dark" href="Contribution.html" >  Contribute</a>  
             <a  class="nav Lighttheme" id="dark" href="To-Do-Liste.html" > To-Do-List</a> 
-        </div> 
+        </div>      
     </nav>
-
-    <aside>
-        <div class="Darkmode Lighttheme" id="dark"> 
-            <span>Darkmode: 
-                <label class="switchD">
-                    <input type="checkbox" id="darkcheck"  onclick="changeCookieDark()">
-                    <span class="slider round"></span>
-                </label>
-            </span>            
-        </div> 
-        <script>
-            var dark = getCookie("darkmode");
-                if(dark == "on"){   
-                    Darkmode();  
-                    document.getElementById("darkcheck").checked = true;
-                }
-        </script>
-    </aside>
-        
+    
     <main>
+        
         <section>          
                 <h2>And this is a project of EFI 2020.</h2>  
                 <h2>
@@ -115,6 +99,25 @@
 
     
 </body>
+
+<aside>
+    <div class="Darkmode Lighttheme" id="dark"> 
+        <span>Darkmode: 
+            <label class="switchD">
+                <input type="checkbox" id="darkcheck"  onclick="changeCookieDark()">
+                <span class="slider round"></span>
+            </label>
+        </span>            
+    </div> 
+    <script>
+        var dark = getCookie("darkmode");
+            if(dark == "on"){   
+                Darkmode();  
+                document.getElementById("darkcheck").checked = true;
+            }
+    </script>
+</aside>
+
 <!--
 <marquee class="Rollstuhl" scrollamount="18" direction="right" behavior="alternate"> <i class="fab fa-accessible-icon"></i></marquee>
 -->
