@@ -79,7 +79,8 @@ h1.Titel {
       /* Styling of Navigation bar, currently under development */
     nav {
       position: sticky;
-      top: 0px;   
+      top: 0px;  
+      z-index: 10; 
       }
 
     nav div {           /*Container for flexbox (NavBar) */
@@ -381,5 +382,42 @@ a.faviHome {
   50% {background-color: #006500;}
   0% {background-color: #003500;}
 }
+
+/* The progress bar (scroll indicator) */
+.scroll-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+  position:fixed;
+  bottom: 0px;
+}
+
+.scroll-bar {
+  height: 8px;
+  background: #73d473;
+  width: 0%;
+}
+
+
+/*ToDoListe*/
+
+ul li {
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: linear-gradient(to right, rgba(250,250,250,0.6) 0%, rgba(250,250,250,0.1) 8%); 
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: linear-gradient(to right, rgba(200,200,200,0.6) 0%, rgba(200,200,200,0.1) 16%);
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: linear-gradient(to right, rgba(150,150,150,0.6) 0%, rgba(150,150,150,0.1) 35%);
+}
+
+
+
 
            
