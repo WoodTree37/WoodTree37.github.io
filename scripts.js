@@ -36,10 +36,10 @@ function PAMMAHelp() {
                  }
                  else {
                     var element = document.querySelector('.Titel'); 
-                 }
-                 
+                 }                
                  element.classList.toggle("Titel");                               
-                 element.classList.toggle("Titel-dark");    
+                 element.classList.toggle("Titel-dark");   
+
                  var dark = document.querySelectorAll("#dark"); 
                  var leng = dark.length;
                     for(var i=0; i < leng; i++) 

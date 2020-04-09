@@ -83,9 +83,9 @@ h1.Titel {
       justify-content: space-between;      
     }
 
-     a.nav, .navbar {  /*Elements for Flexbox --> the Buttons (NavBar)  */
+     a.nav {  /*Elements for Flexbox --> the Buttons (NavBar)  */
         flex: 1; 
-        z-index: 10;            
+        z-index: 7;            
         text-decoration: none;
         text-align: center;             
         border-radius: 2px;                
@@ -94,25 +94,29 @@ h1.Titel {
         margin-right: 1px;
         margin-bottom: 2px;
         min-width: 240px;  
-        cursor: pointer;                      
+        cursor: pointer;   
+        z-index: 8;                   
       }
 
 
-      nav a:hover, .navbar:hover, .dropdown-content a:hover { /*Change the color of the Buttons on hover*/
+      nav a:hover, .dropbtn:hover, .dropdown-content a:hover { /*Change the color of the Buttons on hover*/
         background-color: rgb(0, 240, 0);          
       }    
 
       /*Dropdown NavigationBar*/    
        .dropbtn {
-        cursor: pointer;
         font-size: 16px;
         padding-bottom: 10px;  
-        border: none;
-        outline: none;
-        background-color: inherit;
-        padding-left: 50%;
-        
+        flex: 1;                
+        padding-top: 10px; 
+        height: 50px;
+        margin-right: 1px;
+        margin-bottom: 2px;
+        min-width: 240px;  
+        cursor: pointer;  
+        z-index:9; 
       }
+      
 
       .dropdown-content { 
         display: none;
@@ -162,18 +166,21 @@ h1.Titel {
     a.Button {  /*Elements for Flexbox (Fächerbuttons-Buttons) */
         flex: 1;
         text-align: center;
-        padding: 60px 0px;  
+        padding: 60px 0px; 
         margin: 5px;
         min-width: 250px;       
         border-radius: 5px;      
         text-decoration: none;
+        cursor: pointer;  
+    }
+    a.closed {
+      cursor: not-allowed;
     }
 
     
 
     a.Button:hover {  /*Change the color of the Buttons on hover*/
-      background-color: rgb(0, 240, 0);    
-      z-index: -1;  
+      background-color: rgb(0, 240, 0);      
     }
 
             /*generally links*/
