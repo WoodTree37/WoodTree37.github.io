@@ -368,7 +368,9 @@ div.Darkmode {
   0% {background-color: #90ee90;}
   50% {background-color: #73d473;}
   0% {background-color: #90ee90;}
+  
 }
+
 
 @keyframes colorCdark {
   0% {background-color: #003500;}
