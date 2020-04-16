@@ -28,12 +28,6 @@
             color: rgb(156, 147, 147);
           }
 
-  
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
         .download {
           color: darkslategrey;
           text-decoration: none;
