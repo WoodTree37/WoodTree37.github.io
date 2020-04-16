@@ -120,7 +120,7 @@ function getCookie(cname) {
   
 
 // Set the date we're counting down to
-var countDownDate = new Date("Apr 28, 2020 16:35:00").getTime();
+var countDownDate = new Date("May 18, 2020 17:00:00").getTime();
 
 var x = setInterval(function() {
   var now = new Date().getTime();
