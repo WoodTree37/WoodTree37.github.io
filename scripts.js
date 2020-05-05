@@ -103,10 +103,10 @@ function getCookie(cname) {
     }
   }
 
-  //Filters
-  /*_________________________________________________________________________________--*/
+  //Filters?
+/*_________________________________________________________________________________--*/
 
-  function funfKL() {
+function funfKL() {
     var x = document.querySelectorAll("#funefKL");
     if (x.style.display === "none") {
       x.style.display = "block";
@@ -115,11 +115,10 @@ function getCookie(cname) {
     }
   }
 
-  //Countdown
-  /*_________________________________________________________________________________--*/
-  
 
-// Set the date we're counting down to
+  //Countdown
+/*_________________________________________________________________________________--*/
+function timer() {
 var countDownDate = new Date("May 18, 2020 17:00:00").getTime();
 
 var x = setInterval(function() {
@@ -135,15 +134,30 @@ var x = setInterval(function() {
   + minutes + "m " + seconds + "s ";
 
 }, 1000);
+}
+
 
 /* ScrollBar*/
-
 function scrollBar() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
   document.getElementById("scrollBar").style.width = scrolled + "%";
 }
+
+/*Daytime themed backgound */
+var hour = new Date().getHours();
+var dark = getCookie("darkmode");
+  if (dark == "on") {
+    var color = 150 - (hour * 4);
+    document.body.style.backgroundColor = "rgb(10,10," + color + ")"; 
+  }
+  else {
+    var color = 250 - (hour * 4);
+    document.body.style.backgroundColor =  "rgb(10,10," + color + ")";   
+    }
+
+  
 
     
 

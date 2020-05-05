@@ -11,15 +11,15 @@
 
 .Lighttheme {
   background: linear-gradient(to right, #90ee90 0%, #66ff99 100%);
-  
   border: 2px solid green; 
   color: black;
 }
 
         body {
           font-size: 1.1em;          
-          background: linear-gradient(to bottom right, #add8e6 2%, #0066ff 80%);
+     /*     background: linear-gradient(to bottom right, #add8e6 2%, #0066ff 80%);*/
           color:black;
+          
           }
 
           /*Darkmode of background*/
