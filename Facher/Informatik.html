@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Nick Truttmann">
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css">   <!--Einbettung des Stylsheets-->
     <script src="https://kit.fontawesome.com/047f4e48cc.js" crossorigin="anonymous"></script>
         <script src="../scripts.js"></script>
 
@@ -18,7 +19,6 @@
         <meta name="msapplication-TileColor" content="#90ee90">
         <meta name="msapplication-config" content="../favicons/browserconfig.xml">
         <meta name="theme-color" content="#90ee90">
-
 </head>
 
     <body bgcolor="gray">
@@ -46,5 +46,23 @@
   </nav> 
 
 </body>
+
+<aside>
+    <div class="Darkmode Lighttheme" id="dark"> 
+        <span>Darkmode: 
+            <label class="switchD">
+                <input type="checkbox" id="darkcheck"  onclick="changeCookieDark()">
+                <span class="slider round"></span>
+            </label>
+        </span>            
+    </div> 
+    <script>
+        var dark = getCookie("darkmode");
+            if(dark == "on"){   
+                Darkmode();  
+                document.getElementById("darkcheck").checked = true;
+            }
+    </script>
+</aside>
 
 </html>

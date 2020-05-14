@@ -53,23 +53,6 @@
         </div> 
     </nav>
 
-    <aside>
-        <div class="Darkmode Lighttheme" id="dark"> 
-            <span>Darkmode: 
-                <label class="switchD">
-                    <input type="checkbox" id="darkcheck"  onclick="changeCookieDark()">
-                    <span class="slider round"></span>
-                </label>
-            </span>            
-        </div> 
-        <script>
-            var dark = getCookie("darkmode");
-                if(dark == "on"){   
-                    Darkmode();  
-                    document.getElementById("darkcheck").checked = true;
-                }
-        </script>
-    </aside>
 
                 <!--This is the hidden game, referencing the WebGl folder.-->
                     <div class="webgl-content">
@@ -81,4 +64,24 @@
                         </div>
                       </div>
          </body>
+
+<aside>
+    <div class="Darkmode Lighttheme" id="dark"> 
+        <span>Darkmode: 
+            <label class="switchD">
+                <input type="checkbox" id="darkcheck"  onclick="changeCookieDark()">
+                <span class="slider round"></span>
+            </label>
+        </span>            
+    </div> 
+    <script>
+        var dark = getCookie("darkmode");
+            if(dark == "on"){   
+                Darkmode();  
+                document.getElementById("darkcheck").checked = true;
+            }
+    </script>
+</aside>
+
+
 </html>
