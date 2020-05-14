@@ -64,13 +64,7 @@
    padding: 8px 20px;
    margin-bottom: 4px;
 }
-
-h1.Titel {
-   max-width: 83%;
-   margin-left: 5%;
-}
       
-      /* Styling of Navigation bar, currently under development */
     nav  {
       position: sticky;
       top: 0px;  
@@ -99,11 +93,7 @@ h1.Titel {
         cursor: pointer;   
         z-index: 8;                   
       }
-
-
-      nav a:hover, .dropbtn:hover, .dropdown-content a:hover { /*Change the color of the Buttons on hover*/  
-        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);      
-      }    
+   
 
       /*Dropdown NavigationBar*/    
        .dropbtn {
@@ -117,8 +107,7 @@ h1.Titel {
         min-width: 240px;  
         cursor: pointer;  
         z-index:9; 
-      }
-      
+      }     
 
       .dropdown-content { 
         display: none;
@@ -126,19 +115,19 @@ h1.Titel {
         top: 52px;
         left: 0;
         width: 100%;
-        z-index: 1;
-        
+        z-index: 1;     
       }      
       
       .show, .dropdown-content a {
         display: block;
       }
 
-        /*Marque, currently disable to reduce eye cancer*/
-    .Rollstuhl {
-      position: fixed;
-      bottom: 0;     
-    }
+      /*Titel*/
+      /*__________________________________________________________________________________________________*/
+      h1.Titel {
+        max-width: 83%;
+        margin-left: 5%;
+     }
 
     h2 {
         text-align: center;       
@@ -164,7 +153,6 @@ h1.Titel {
       justify-content: space-between;
     }
 
-
     a.Button {  /*Elements for Flexbox (Fächerbuttons-Buttons) */
         flex: 1;
         text-align: center;
@@ -180,11 +168,7 @@ h1.Titel {
       opacity: 0.6;
     }
 
-    
 
-    a.Button:hover {  /*Change the color of the Buttons on hover*/   
-      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);  
-    }
 
             /*generally links*/
     .link:link, .link:visited { 
@@ -208,15 +192,13 @@ h1.Titel {
       }
       
       div.gallery:hover {
-        border: 1px solid #777;
-        
+        border: 1px solid #777;       
       }
       
       div.gallery img {
-      width: 100%;
-        image-orientation: -180deg;
-        
+      width: 100%;        
       }
+
       div.gallery embed {
         width: 100%;
         height: 400px;
@@ -248,7 +230,7 @@ h1.Titel {
       }
 
 
-                      /*Die Physik sektionen sind standardmässig nicht sichtbar. Under Development!*/
+                      /*Die Physik sektionen sind standardmässig nicht sichtbar.*/
             #panel4,#panel5, #panel6 {
               display: none;
             }
@@ -342,7 +324,6 @@ div.Darkmode {
 }
 
 
-
 /*Sizing for the navbar*/
 @media screen and (max-width: 800px) {  
   .navbar {
@@ -371,14 +352,13 @@ div.Darkmode {
   
 }
 
-
 @keyframes colorCdark {
   0% {background-color: #003500;}
   50% {background-color: #006500;}
   0% {background-color: #003500;}
 }
 
-/* The progress bar (scroll indicator) */
+/* ScrollBar */
 .scroll-container {
   width: 100%;
   height: 8px;
@@ -402,7 +382,7 @@ ul li {
   background: linear-gradient(to right, rgba(250,250,250,0.6) 0%, rgba(250,250,250,0.1) 8%); 
 }
 
-/* Set all odd list items to a different color (zebra-stripes) */
+/* zebra-stripes */
 ul li:nth-child(odd) {
   background: linear-gradient(to right, rgba(200,200,200,0.6) 0%, rgba(200,200,200,0.1) 16%);
 }
