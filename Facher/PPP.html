@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="Englisch" >
+<html lang="Deutsch" >
 
 <head>
     <title>PPP</title>
@@ -8,7 +8,6 @@
     <meta name="author" content="Nick Truttmann">
     <link rel="stylesheet" type="text/css" href="../stylesheet.css">   <!--Einbettung des Stylsheets-->
     <script src="https://kit.fontawesome.com/047f4e48cc.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>        <!--Do I need this?-->
         <script src="../scripts.js"></script>
 
         <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png"> <!--Favicons-->
@@ -21,21 +20,33 @@
         <meta name="msapplication-config" content="../favicons/browserconfig.xml">
         <meta name="theme-color" content="#90ee90">
 
-    <script>
-      $(function(){
-        $("#nav-placeholder").load("../nav.html");
-      });
-      </script>
+  
 </head>
 
 <body bgcolor="ff99dd">
     
     <header>
-        <div class="Titel"> <h1>Dies ist die Seite der alten PPP-Prüfungen.</h1>  </div>  
+        <div class="Titel"> <h1>PPP-Prüfungen <a class="faviHome" target="_self" href="https://woodtree37.github.io"><img src="/favicons/favicon.ico" alt="faviHome"> </a> </h1>  </div>  
     </header>
 
-<!--Imported Navigation menue-->
-<div id="nav-placeholder"> </div>  
+<!--Navigation menue-->
+<nav>    
+  <div class="navbar">
+      <button class="dropbtn Lighttheme" id="dark" onclick="Drop()"><i class="fas fa-bars"></i></button>
+           <div class="dropdown-content" id="myDropdown">
+              <a class="nav Lighttheme" id="dark" href="../index.html" >  Home</a>        
+              <a class="nav Lighttheme" id="dark" href="../Contribution.html" >  Contribute</a>  
+              <a class="nav Lighttheme" id="dark" href="../To-Do-Liste.html"> To-Do-List</a> 
+          </div>              
+  </div> 
+  
+  <!--This only work when loaded with a server!!-->
+  <div class="navbig" >
+      <a  class="nav Lighttheme" id="dark" href="../index.html" >  Home</a>        
+      <a  class="nav Lighttheme" id="dark" href="../Contribution.html" >  Contribute</a>  
+      <a  class="nav Lighttheme" id="dark" href="../To-Do-Liste.html" > To-Do-List</a> 
+  </div>      
+</nav>
 
     
 

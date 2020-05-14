@@ -13,18 +13,6 @@
                 }
             }
         }
-     
-
-// PAM Matura
-function PAMMAHelp() {
-    if (window.confirm("This Site can only run if it is supported by the people. \n Will you contribute to this site?")) {    
-      window.alert("Thank you!\n\n You can use the Contribute Button to send you Summarys");
-    } 
-    else {
-      PAMMAHelp();
-    }   
-}
-
 
               function Darkmode() {
                                       
@@ -103,23 +91,12 @@ function getCookie(cname) {
     }
   }
 
-  //Filters?
-/*_________________________________________________________________________________--*/
-
-function funfKL() {
-    var x = document.querySelectorAll("#funefKL");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  }
 
 
   //Countdown
 /*_________________________________________________________________________________--*/
 function timer() {
-var countDownDate = new Date("May 18, 2020 17:00:00").getTime();
+var countDownDate = new Date("May 29, 2020 12:00:00").getTime();
 
 var x = setInterval(function() {
   var now = new Date().getTime();
@@ -144,20 +121,3 @@ function scrollBar() {
   var scrolled = (winScroll / height) * 100;
   document.getElementById("scrollBar").style.width = scrolled + "%";
 }
-
-/*Daytime themed backgound */
-var hour = new Date().getHours();
-var dark = getCookie("darkmode");
-  if (dark == "on") {
-    var color = 150 - (hour * 4);
-    document.body.style.backgroundColor = "rgb(10,10," + color + ")"; 
-  }
-  else {
-    var color = 250 - (hour * 4);
-    document.body.style.backgroundColor =  "rgb(10,10," + color + ")";   
-    }
-
-  
-
-    
-
