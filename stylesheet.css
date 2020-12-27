@@ -205,12 +205,12 @@
       }
       
 
-
       div.desc {      /*Beschreibungstexte für PDF's*/
         padding: 15px;
         height: 100px;
         text-align: center;
         background-color: grey;
+        align-self: baseline;
       }
  
       section.flex {  /*Container for Flexbox (Bilder-Box) */
