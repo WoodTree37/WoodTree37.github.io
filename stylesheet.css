@@ -210,7 +210,7 @@
         height: 100px;
         text-align: center;
         background-color: grey;
-        align-self: baseline;
+        vertical-align: bottom;
       }
  
       section.flex {  /*Container for Flexbox (Bilder-Box) */
