@@ -35,6 +35,24 @@
             You can return to the main menu via the Button. <br> <br>
             If you feel like this page is missing due to an error, please contact <a href="mailto:nick.truttmann@icloud.com">nick.truttmann@icloud.com</a>
     </article>
+
+    <aside>
+        <div class="Darkmode Lighttheme" id="dark"> 
+            <span>Darkmode: 
+                <label class="switchD">
+                    <input type="checkbox" id="darkcheck"  onclick="changeCookieDark()">
+                    <span class="slider round"></span>
+                </label>
+            </span>            
+        </div> 
+        <script>
+            var dark = getCookie("darkmode");
+                if(dark == "on"){   
+                    Darkmode();  
+                    document.getElementById("darkcheck").checked = true;
+                }
+        </script>
+    </aside>
    
 </body>
 
