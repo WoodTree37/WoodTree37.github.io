@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>       
+    </head>
+
+<body>
+            <canvas id="Field" width="500" height="500" style="border:3px solid black"></canvas>  
+                
+        <script>  
+
+        var canvas = document.getElementById("Field");
+        var ctx = canvas.getContext("2d");
+        let color = "rgba(0, 0, 0, 1)";
+        var gngrosse = 10;
+           
+        const ktemp = [[0,0,0]];
+        const ksend = [[0,0,0]];
+        ktemp.pop();
+        ksend.pop();
+        const krec  = [[]];      //Das wird nie leer sein!
+        var kreisgroesse =20;
+             
+        base_image = new Image();
+            base_image.src = 'f_image_3.jpg';
+            base_image.onload = function(){
+            ctx.drawImage(base_image, 0, 0,500,500);  }
+
+document.addEventListener("click", function()
+                {
+                    if(field_area_y <= 500 && field_area_x <= 500)
+                    {
+                        drawDot()
+                    }      
+                 });
+window.addEventListener('mousemove', function (e) {
+                field_area_x = e.pageX - 10;
+                field_area_y = e.pageY - 10;  });
+      
+                
+function drawDot()
+    {
+        var side = 0;
+        if (color == "rgba(255, 0, 0, 0.6)") {
+            side = 5;}
+        else if(color == "rgba(0, 100, 255, 0.6)") {                
+            side = 1; }
+        else  {
+            side = 99;}
+        ktemp.push([field_area_x,field_area_y,side]);
+        document.getElementById("demo").innerHTML = ktemp;
+        ctx.fillStyle = color;               
+        ctx.beginPath();
+        ctx.arc(field_area_x,field_area_y,kreisgroesse, 0, 2 * Math.PI); //arc(x,y,r,startangle,endangle) 
+        ctx.fill();
+        
+    }
+
+function clearField() {
+            ctx.clearRect(0, 0, 500, 500); 
+            ctx.drawImage(base_image, 0, 0,500,500);
+
+        while(ktemp.length > 0)
+        {
+            ktemp.pop();
+        }
+        document.getElementById("demo").innerHTML = "CLEAR!";
+    }
+
+function setColorR() {
+        color = "rgba(255, 0, 0, 0.6)";
+        document.getElementById("demo").innerHTML = "FarbwechselROT";
+}
+function setColorB() {
+        color = "rgba(0, 100, 255, 0.6)";
+        document.getElementById("demo").innerHTML = "FarbwechselBLAU";
+} 
+
+function saveArray() {
+    var i = ktemp.length - 1;
+    for(; i >= 0; i--)
+    {
+        ksend.push(ktemp[i]);         
+    }
+    duplicates();
+    duplicates();
+    duplicates();
+    document.getElementById("demo").innerHTML = "Saved: "+ ksend; 
+}
+
+function displayArray() {
+
+    clearField();   
+    var side;
+    var i = ((ksend.length) - 1);
+    
+        for(; i >= 0; i--)
+        {
+          side = ksend[i][2];     
+            if (side == 5) {
+                color = "rgba(255, 0, 0, 0.6)";}
+            else if (side == 1)  {                
+                color = "rgba(0, 100, 255, 0.6)";}
+            else  {
+                color = "rgba(0, 0, 0, 0)";}    //unsichtbar im Ursprung
+
+        ctx.fillStyle = color;             
+        ctx.beginPath();
+        ctx.arc(ksend[i][0], ksend[i][1], kreisgroesse, 0, 2 * Math.PI); //arc(x,y,r,startangle,endangle
+        ctx.strokeStyle = "darkblue";
+        ctx.lineWidth = 3; 
+        ctx.stroke();
+        ctx.fill();   
+           
+        }   
+       
+}
+
+function duplicates()
+{
+            var gngroesse =kreisgroesse;
+            var ende1 = ksend.length-1;     
+            var ende2 = ende1;               
+    for(var s=0;s<=ende1 ; s++)       //Definiert mit welches Spalte verglichen wird. s<=ende1
+    {              
+        for(var i =0; i<= ende2; i++)       //Definiert zu welcher Spalte verglichen wird.i<= ende2
+        {     
+            if(s==i)
+            {   }            
+              else if(((ksend[s][0] - ksend[i][0]) > -(gngroesse)) && ((ksend[s][0] - ksend[i][0]) < gngroesse) && (ksend[s][2] == ksend[i][2])) //&& ((ksend[s][0] - ksend[i][0]) != 0), Dies wäre zum verhindern dass das eigene gelöscht wird. 
+              {
+              
+                if(((ksend[s][1] - ksend[i][1]) > -(gngroesse)) && ((ksend[s][1] - ksend[i][1]) < gngroesse) )          //Vergleich Y Koordinate   
+                {
+                    ksend.splice(i, 1);
+                }                           
+              }
+            else          //Nur für Debugging
+            { }   
+        }  
+    }
+}
+
+
+function sort(spalte)                                                               //Das Sorting wird im Moment noch nicht gebraucht!
+{
+
+                var end1 = ktemp.length-2;        // ktemp.length - 1;
+                var end2 = end1;
+    for(var p=0; p<= end1; p++)       //5 muss durch length ersetz werden
+    {              
+        for(var i =0; i<= end2; i++)
+        {      
+            if(ktemp[i][spalte] > ktemp[i+1][spalte])       //if(ktemp[0][0] > ktemp[1][0]) 
+            {
+                var ks = ktemp[i];
+                ktemp[i]=ktemp[i+1];
+                ktemp[i+1]=ks;
+            }    
+        }    
+    }
+document.getElementById("demo").innerHTML = "Sorted!: " + ktemp;
+}
+
+
+
+
+function printArray() {
+    document.getElementById("demo").innerHTML = "Print: "+ ksend; 
+}
+
+</script>
+
+
+
+
+<div style="text-align:center;width:500px">
+    <button onclick="setColorR()">Enemy</button>
+    <button onclick="setColorB()">Friend</button>
+    <button onclick="clearField()">Clear</button><br> <br> <br>
+     
+  <button onclick="saveArray()">Save Positions</button>
+  <button onclick="displayArray()">Load Positions</button>
+  <button onclick="printArray()">print Array</button>
+  <button onclick="duplicates()">sortArray</button><br>
+  
+
+  </div> 
+
+  <p id="demo"></p>   <!--Onscreen Terminal-->
+
+
+
+
+
+
+        </body>
+        </html>
