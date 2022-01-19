@@ -186,7 +186,7 @@
       /* Section for Image Gallery (Backdrop of images) */
       div.gallery { 
         border: 1px solid #ccc;
-        background-color: whitesmoke;
+        background-color: rgba(53, 58, 54, 0.781);
         box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.4), 0 8px 30px 0 rgba(0, 0, 0, 0.3);
         text-align: center;
       }
