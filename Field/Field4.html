@@ -3,6 +3,9 @@
 
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>       
+
+    
+    
     </head>
 
 <body>
@@ -98,11 +101,11 @@ function displayArray() {
         for(; i >= 0; i--)
         {
           side = ksend[i][2];     
-            if (side == 5) {
+            if (side == 5) {                        //Gegner
                 color = "rgba(255, 0, 0, 0.6)";}
-            else if (side == 1)  {                
+            else if (side == 1)  {                  //Eigene 
                 color = "rgba(0, 100, 255, 0.6)";}
-            else  {
+            else  {                                 //Fehler
                 color = "rgba(0, 0, 0, 0)";}    //unsichtbar im Ursprung
 
         ctx.fillStyle = color;             
