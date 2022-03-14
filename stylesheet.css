@@ -10,9 +10,12 @@
 }
 
 .Lighttheme {
-  background: linear-gradient(to right, #90ee90 0%, #66ff99 100%);
-  border: 2px solid green; 
-  color: black;
+ /* background: linear-gradient(to right, #90ee90 0%, #66ff99 100%);*/
+  background: yellow;
+ /* border: 2px solid green; */
+ border: 2px solid blue;
+ /* color: black;*/
+ color: blue; 
 }
 
         body {
