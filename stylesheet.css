@@ -4,9 +4,11 @@
 }
 
 .Darktheme {
-  background: linear-gradient(to right, #008000 0%, #006600 100%);
+ /* background: linear-gradient(to right, #008000 0%, #006600 100%);*/
+  background: darkgoldenrod;
   border: 2px solid black;
-  color: rgb(156, 147, 147);
+ /* color: rgb(156, 147, 147);*/
+  color: darkblue; 
 }
 
 .Lighttheme {
