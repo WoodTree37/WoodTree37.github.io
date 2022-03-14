@@ -1,0 +1,36 @@
+{
+   
+    "php.validate.executablePath": "C:\\php-7.4.27-Win32-vc15-x64\\php.exe",
+    "php.executablePath": "C:\\php-7.4.27-Win32-vc15-x64\\php.exe",
+    
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "mysql1.ethz.ch",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "Field",
+            "database": "ntruttmann",
+            "username": "ntruttmann",
+            "password": "Field123Field",
+            "connectionTimeout": 10
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "sql11.freesqldatabase.com",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "Field",
+            "database": "sql11470328",
+            "username": "sql11470328",
+            "password": "ylzbcMl3NP"
+        }
+    ]
+
+}
