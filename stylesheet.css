@@ -44,7 +44,8 @@
         }
 
 .Titel {              
- background:  #90ee99;
+ /*background:  #90ee99;*/
+ background: blue;
  animation-iteration-count: infinite;
  animation-name: colorC;
  animation-duration: 8s;
