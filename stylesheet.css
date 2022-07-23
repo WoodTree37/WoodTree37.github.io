@@ -44,11 +44,10 @@
         }
 
 .Titel {              
- /*background:  #90ee99;*/
- background: blue;
+ background:  #90ee99;
  animation-iteration-count: infinite;
  animation-name: colorC;
- animation-duration: 8s;
+ animation-duration: 20s;
   text-align: left;   
   z-index: 10; 
   height: auto;
@@ -356,7 +355,7 @@ div.Darkmode {
     float: right; }
 }
 
-/*Colorcahnge of the Title */
+/*Colorcahnge of the Title 
 @keyframes colorC {
   0% {background-color: #90ee90;}
   50% {background-color: #73d473;}
@@ -368,7 +367,7 @@ div.Darkmode {
   0% {background-color: #003500;}
   50% {background-color: #006500;}
   0% {background-color: #003500;}
-}
+}*/
 
 /* ScrollBar */
 .scroll-container {
