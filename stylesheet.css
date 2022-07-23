@@ -13,11 +13,11 @@
 
 .Lighttheme {
  /* background: linear-gradient(to right, #90ee90 0%, #66ff99 100%);*/
-  background: yellow;
+  background: lightsalmon;
  /* border: 2px solid green; */
  border: 2px solid blue;
  /* color: black;*/
- color: blue; 
+ color: lightblue; 
 }
 
         body {
