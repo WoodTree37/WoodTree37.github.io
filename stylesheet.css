@@ -13,11 +13,11 @@
 
 .Lighttheme {
  /* background: linear-gradient(to right, #90ee90 0%, #66ff99 100%);*/
-  background: lightsalmon;
+  background: lightgreen;
  /* border: 2px solid green; */
  border: 2px solid blue;
  /* color: black;*/
- color: lightblue; 
+ color: black; 
 }
 
         body {
@@ -141,13 +141,19 @@
 
     h3            /* Übertitel der Prüfungen*/ {
     border-bottom: 2px groove black; /*Hier könnte jedweils die Hintergrundfareb, aber dünkler sein */
-    background-color: goldenrod;
+    background-color: rgb(77, 147, 212);
     color:black;
-    
+    padding: 10px;
     }
 
-    h4.Autor      /*Beschriftung für Autorentitel*/ {
-      text-align: left;
+    section.exam {  /*Hintergrund Prüfungen */
+      background-color: greenyellow;
+      padding: 10px;
+    }
+
+    section.summary {  /*Hintergrund Prüfungen */
+      background-color: lightsalmon;
+      padding: 10px;
     }
 
             
